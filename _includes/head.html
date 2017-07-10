@@ -15,4 +15,16 @@
   {% if site.google_analytics%}
   {% include google-analytics.html %}
   {% endif %}
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		showProcessingMessages: false,
+		tex2jax: {
+			inlineMath: [["$", "$"], ["\\(", "\\)"]],
+			processEscapes:true
+		},
+		menuSettings: {
+			zoom: "Hover"
+		}
+	});
+</script>
 </head>
