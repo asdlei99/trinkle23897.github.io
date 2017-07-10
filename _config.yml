@@ -1,4 +1,4 @@
-permalink: /:title
+#permalink: /:title
 title: n+e   # your title
 author: n+e # your name
 description: Just have some fun here # your description
