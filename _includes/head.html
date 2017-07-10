@@ -15,7 +15,10 @@
   {% if site.google_analytics%}
   {% include google-analytics.html %}
   {% endif %}
-<script type="text/x-mathjax-config">
+
+  <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/x-mathjax-config">
 	MathJax.Hub.Config({
 		showProcessingMessages: false,
 		tex2jax: {
@@ -26,5 +29,5 @@
 			zoom: "Hover"
 		}
 	});
-</script>
+  </script>
 </head>
