@@ -17,7 +17,7 @@ excerpt_separator: '<!-- more -->'
 
 # Comments
 disqus:
-  shortname: http-trinkle23897-github-io   # your disqus shortname
+  shortname: trinkle   # your disqus shortname
 
 # Google Analytics
 # google_analytics:   # your google analytics
