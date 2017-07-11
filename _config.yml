@@ -16,8 +16,8 @@ gems: [jekyll-paginate]
 excerpt_separator: '<!-- more -->'
 
 # Comments
-# disqus:
-#   shortname: n+e   # your disqus shortname
+ disqus:
+   shortname:    # your disqus shortname
 
 # Google Analytics
-# google_analytics: n+e-1  # your google analytics
+ google_analytics:   # your google analytics
