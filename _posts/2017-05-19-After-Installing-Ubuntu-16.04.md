@@ -18,6 +18,7 @@ layout: post
 4. Typora
 5. Chrome：远方、ADBlock、tampermonkey（针对百度云-EX-百度云盘+百度云插件-APIKEY修复版）、switchyomega+ss
 6. texlive-full latex-cjk-all gummi
+15. proxychains: 代理神器，再也不用担心git clone断掉了
 7. opencv,opengl,caffe: github.com/milq/milq/script/bash/
 8. libnfc-dev,mfoc 千万不要自己从官网上搞下来可能会有配置的bug
 9. 硬盘里的mathematica、matlab
@@ -27,7 +28,6 @@ layout: post
 12. indicator-multiload
 13. ipython,ipython3,pypy,pip3,pip2: numpy,scipy,pandas,tensorflow,nltk
 14. virtualbox
-15. proxychains: 代理神器，再也不用担心git clone断掉了
 16. wps office
 17. wine
 18. openvpn
