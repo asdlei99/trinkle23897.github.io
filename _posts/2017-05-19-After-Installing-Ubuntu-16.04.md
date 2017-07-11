@@ -6,6 +6,8 @@ layout: post
 
 脚本等我第六遍装的时候弄一下……
 
+<!-- more -->
+
 0. 修改/etc/apt/sources.list 为tuna镜像源
 1. vim
 2. sublime
