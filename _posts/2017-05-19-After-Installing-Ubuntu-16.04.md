@@ -26,7 +26,7 @@ layout: post
 10. qtcreater
 11. unity-tweak-tool+macbuntu：把ubuntu修改成mac界面，不建议修改登录界面可能会有奇怪的事情发生
 12. indicator-multiload
-13. ipython,ipython3,pypy,pip3,pip2: numpy,scipy,pandas,tensorflow,nltk
+13. ipython,ipython3,pypy,pip3,pip2: numpy,scipy,pandas,tensorflow,nltk,matplotlib
 14. virtualbox
 16. wps office
 17. wine
