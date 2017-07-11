@@ -2,6 +2,10 @@
 layout: post
 ---
 
+之所以又搭了blog是因为i11r越来越那啥了，几乎上不去（可能github也是如此？），并且用git来写东西十分方便，并且想亲手搭一个试试看。
+
+以下是Theme的介绍
+
 A simple two-column jekyll theme delicated to wrting.
 
 <!-- more -->
