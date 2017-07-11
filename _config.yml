@@ -16,8 +16,8 @@ gems: [jekyll-paginate]
 excerpt_separator: '<!-- more -->'
 
 # Comments
- disqus:
-   shortname:    # your disqus shortname
+disqus:
+  shortname: http-trinkle23897-github-io   # your disqus shortname
 
 # Google Analytics
- google_analytics:   # your google analytics
+# google_analytics:   # your google analytics
