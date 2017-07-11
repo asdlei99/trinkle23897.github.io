@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: true
 ---
 <div id="banner">
   <h1 class="title">{{ page.title | escape }}</h1>
@@ -14,7 +13,7 @@ comments: true
     {{ content }}
   </div>
 
-  {% if site.disqus %}
+<!--  {% if site.disqus %}-->
   <div id="disqus_thread">
     <script>
       var disqus_config = function () {
@@ -29,6 +28,6 @@ comments: true
       })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-  {% endif %}
+<!--  {% endif %}-->
 </div>
 </div>
