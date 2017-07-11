@@ -16,6 +16,7 @@ active: about
 
 想要联系的话可以发邮件给我哦！邮箱是 463003665 [at] qq [dot] com。
 
+[原来的blog](https://trinkle.i11r.com)
 
 This is a simple two-column [jekyll](https://jekyllrb.com/) theme delicated to wrting.
 
