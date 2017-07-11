@@ -4,6 +4,7 @@ layout: post
 
 A simple two-column jekyll theme delicated to wrting.
 
+<!-- more -->
 
 ## Preview
 
