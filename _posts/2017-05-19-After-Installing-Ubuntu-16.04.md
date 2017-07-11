@@ -16,7 +16,7 @@ layout: post
 2. 搜狗拼音 or Google拼音
 3. 网易云音乐
 4. Typora
-5. Chrome：远方、ADBlock、tampermonkey（针对百度云-EX-百度云盘+百度云插件-APIKEY修复版）、switchyomega+ss
+5. Chrome：远方、ADBlock、tampermonkey（针对百度云-EX-百度云盘+百度云插件-APIKEY修复版）、switchyomega+ss、微信
 6. texlive-full latex-cjk-all gummi
 15. proxychains: 代理神器，再也不用担心git clone断掉了
 7. opencv,opengl,caffe: github.com/milq/milq/script/bash/
