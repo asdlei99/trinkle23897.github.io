@@ -20,4 +20,4 @@ disqus:
   shortname: trinkle   # your disqus shortname
 
 # Google Analytics
-# google_analytics:   # your google analytics
+google_analytics: UA-102409527-1  # your google analytics
