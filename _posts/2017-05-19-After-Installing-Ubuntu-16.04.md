@@ -24,6 +24,7 @@ layout: post
 9. 硬盘里的mathematica、matlab
 10. libboost
 10. qtcreater
+11. shadowsocks-libev
 11. unity-tweak-tool+macbuntu：把ubuntu修改成mac界面，不建议修改登录界面可能会有奇怪的事情发生
 12. indicator-multiload
 13. ipython,ipython3,pypy,pip3,pip2: numpy,scipy,pandas,tensorflow,nltk,matplotlib
