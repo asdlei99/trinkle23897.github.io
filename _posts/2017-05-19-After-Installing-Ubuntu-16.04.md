@@ -9,8 +9,8 @@ layout: post
 <!-- more -->
 
 0. 修改/etc/apt/sources.list 为tuna镜像源
-1. vim
-2. sublime
+1. vim: you complete me
+2. sublime: autofilename, brackethighlighter,colorhighlighter,codeformatter/sublimeastyleformatter?,docblockr,...
 2. git,git-lfs
 2. axel：多线程下载
 2. 搜狗拼音 or Google拼音
@@ -27,7 +27,7 @@ layout: post
 11. shadowsocks-libev
 11. unity-tweak-tool+macbuntu：把ubuntu修改成mac界面，不建议修改登录界面可能会有奇怪的事情发生
 12. indicator-multiload
-13. ipython,ipython3,pypy,pip3,pip2: numpy,scipy,pandas,tensorflow,nltk,matplotlib
+13. ipython,ipython3,pypy,pip3,pip2: numpy,scipy,pandas,tensorflow,nltk,matplotlib,thefuck
 14. virtualbox
 16. wps office
 17. wine
