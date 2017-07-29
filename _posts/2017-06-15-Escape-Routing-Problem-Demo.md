@@ -4,6 +4,8 @@ layout: post
 
 This page shows some demoes according to the paper's algorithm.
 
+<!-- more -->
+
 node size: $30\times 30$
 <video controls="controls">
  <source src="/video/30x30.mp4" type="video/mp4" />
