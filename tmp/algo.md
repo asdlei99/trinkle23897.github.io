@@ -10,7 +10,7 @@
 
    二分法的下界为$\left\lfloor\frac{node_x\times node_y}{2(node_x+node_y+2)}\right\rfloor$，可由方程$2\times(grid_x+grid_y)\ge node_x\times node_y$推导来，意思是每一个连线起点至少要有一个连线终点与它匹配；二分法上界为$\left\lfloor\frac{1}{2}(\min \{node_x,node_y\}+1)\right\rfloor$，可以证明当$d$等于该值的时候一定有解。
 
-   经试验得知，令函数$f(x,y)=\left\lfloor0.5902 \frac{xy}{x+y}+0.6421\right\rfloor$，则最优解中$d$的值与$f(node_x,node_y)$的误差不超过$1$。为保险起见，设置二分法范围为$f(node_x,node_y)-2\sim f(node_x,node_y)+2$。
+   经试验得知，令函数$f(x,y)=\left\lfloor0.59 \frac{xy}{x+y-1}+0.352\right\rfloor$，则最优解中$d$的值与$f(node_x,node_y)$的误差不超过$1$，在$\max\{node_x,node_y\}\le 200$的时候均成立。因此可认为$d=O(\frac{node_xnode_y}{node_x+node_y})$。
 
 3. 连接靠近中轴线的某些连线起点
 
