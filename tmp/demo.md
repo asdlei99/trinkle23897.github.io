@@ -71,3 +71,17 @@ node size: $80\times 20$
 <video width="560" height="315" src="/video/80x20.webm" controls="controls">
 您的浏览器不支持 video 标签。
 </video>
+
+## 测试flv
+
+<video width="560" height="315" src="/video/30x30.flv" controls="controls">
+您的浏览器不支持 video 标签。
+</video>
+
+<video width="560" height="315" src="/video/40x30.flv" controls="controls">
+您的浏览器不支持 video 标签。
+</video>
+
+<video width="560" height="315" src="/video/80x20.flv" controls="controls">
+您的浏览器不支持 video 标签。
+</video>
