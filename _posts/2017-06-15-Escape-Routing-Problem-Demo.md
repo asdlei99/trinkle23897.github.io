@@ -5,6 +5,7 @@ layout: post
 This page shows some demoes according to the paper's algorithm.
 
 If these videos can't display on your browser, download <a href="/video/demo.zip">here</a>.
+
 <!-- more -->
 
 node size: $30\times 30$
