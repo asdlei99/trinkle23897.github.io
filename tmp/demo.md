@@ -16,3 +16,16 @@ node size: $80\times 20$
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QMYImtpW0z4" frameborder="0" allowfullscreen></iframe>
 
+## 测试
+
+<video width="560" height="315" src="/video/30x30.avi" controls="controls">
+您的浏览器不支持 video 标签。
+</video>
+
+<video width="560" height="315" src="/video/40x30.avi" controls="controls">
+您的浏览器不支持 video 标签。
+</video>
+
+<video width="560" height="315" src="/video/80x20.avi" controls="controls">
+您的浏览器不支持 video 标签。
+</video>
