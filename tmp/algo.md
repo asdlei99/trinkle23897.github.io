@@ -1,5 +1,7 @@
 # 算法流程
 
+0. [算法的tex](https://cn.sharelatex.com/project/597f334596a5d57fcb797d1d)
+
 1. 读入芯片的长度和宽度，记为  $ node_x,node_y $ 。
 
 2. 利用二分法获取每个连线起点的间距  $ d $ ，可对应算出芯片的总长度 $ grid_x $ 和总宽度 $ grid_y $ ，根据以下公式进行计算：
