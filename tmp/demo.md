@@ -15,7 +15,7 @@ node size: $40\times 30$
 node size: $80\times 20$ 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QMYImtpW0z4" frameborder="0" allowfullscreen></iframe>
-
+<!--
 ## 测试avi
 
 <video width="560" height="315" src="/video/30x30.avi" controls="controls">
@@ -85,3 +85,4 @@ node size: $80\times 20$
 <video width="560" height="315" src="/video/80x20.flv" controls="controls">
 您的浏览器不支持 video 标签。
 </video>
+-->

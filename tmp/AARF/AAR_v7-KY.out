@@ -1,0 +1,26 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Preliminaries and Problem Formulation}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Effective Channel Length}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Problem Formulation}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Algorithm Overview}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Constrained Delaunay Triangulation Graph}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Coarse Path Searching}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Dynamic-Programming-Based Detailed Routing}{section.3}% 8
+\BOOKMARK [3][-]{figure.11}{Crosspoint Generation on CDT Edges}{subsection.3.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Dynamic Programming Principle}{subsection.3.3}% 10
+\BOOKMARK [1][-]{section.4}{Algorithm Detail and Complexity}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Algorithm Detail}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Complexity Analysis}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Experimental Results}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Validity Test of the Computational Model}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Effect of the CFD Model}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.3}{Effectiveness Test of the Precision of Dynamic Programming}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.4}{Comparison Between AARF and Manhattan Routing}{section.5}% 18
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 19
+\BOOKMARK [1][-]{section*.1}{References}{}% 20
+\BOOKMARK [1][-]{IEEEbiography.0}{Biographies}{}% 21
+\BOOKMARK [2][-]{IEEEbiography.1}{Kailin Yang}{IEEEbiography.0}% 22
+\BOOKMARK [2][-]{IEEEbiography.2}{Hailong Yao \(SM'15\)}{IEEEbiography.0}% 23
+\BOOKMARK [2][-]{IEEEbiography.3}{Tsung-Yi Ho \(SM'12\)}{IEEEbiography.0}% 24
+\BOOKMARK [2][-]{IEEEbiography.4}{Kunze Xin}{IEEEbiography.0}% 25
+\BOOKMARK [2][-]{IEEEbiography.5}{Yici Cai}{IEEEbiography.0}% 26
