@@ -1,7 +1,7 @@
 # 约定
 
 1. 把左手系改成右手系：y坐标反过来、上下侧改成左右侧
-2. 变量名变短：node_x -> N, node_y -> M, x_temp, y_temp -> t_x, t_y, x_maxnode, y_maxnode -> n_x, n_y, x_grid, y_grid -> g_x, g_y, force_x, force_y -> f_x, f_y
+2. 变量名变短：node_x -> N, node_y -> M, grid_x, grid_y -> g_x,g_y, x_temp, y_temp -> t_x, t_y, x_maxnode, y_maxnode -> n_x, n_y, x_grid, y_grid -> r_x, r_y, force_x, force_y -> f_x, f_y
 3. ​
 
 #  Definition
