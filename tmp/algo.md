@@ -40,9 +40,9 @@
 
 # 算法流程
 
-0. [算法的tex](https://cn.sharelatex.com/project/597f334596a5d57fcb797d1d) [pdf](wdm.pdf)
+0. <!--算法的tex https://cn.sharelatex.com/project/597f334596a5d57fcb797d1d--> [算法的pdf](wdm.pdf)
 
-1. 读入芯片的长度和宽度，记为  $ N,M ​$ 。
+1. 读入芯片的长度和宽度，记为  $ N,M $ 。
 
 2. 利用二分法获取每个连线起点的间距  $ d $ ，可对应算出芯片的总长度 $ g_x $ 和总宽度 $ g_y $ ，根据以下公式进行计算：
    $$
@@ -50,7 +50,7 @@
    $$
    并且对整个芯片建立平面直角坐标系，其中**左上角**为原点$(0,0)$，**向右**为$x$轴正方向，**向下**为$y$轴正方向。
 
-   二分法的下界为$\left\lfloor\frac{N\times M}{2(N+M+2)}\right\rfloor$，可由方程$2\times(g_x+g_y)\ge N\times M$推导来，意思是每一个连线起点至少要有一个连线终点与它匹配；二分法上界为$\left\lfloor\frac{1}{2}(\min \{N,M\}+1)\right\rfloor$，可以证明当$d$等于该值的时候一定有解。
+   二分法的下界为$\left\lfloor\frac{N\times M}{2(N+M+2)}\right\rfloor​$，可由方程$2\times(g_x+g_y)\ge N\times M​$推导来，意思是每一个连线起点至少要有一个连线终点与它匹配；二分法上界为$\left\lfloor\frac{1}{2}(\min \{N,M\}+1)\right\rfloor​$，可以证明当$d​$等于该值的时候一定有解。
 
    经试验得知，令函数$f(x,y)=\left\lfloor0.59 \frac{xy}{x+y-1}+0.352\right\rfloor$，则最优解中$d$的值与$f(N,M)$的误差不超过$1$，在$\max\{N,M\}\le 200$的时候均成立。因此可认为$d=O(\frac{NM}{N+M})$。
 
