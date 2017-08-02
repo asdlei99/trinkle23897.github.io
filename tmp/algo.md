@@ -40,7 +40,7 @@
 
 # 算法流程
 
-0. <!--算法的tex https://cn.sharelatex.com/project/597f334596a5d57fcb797d1d--> [算法的pdf](wdm.pdf)
+0. [算法的pdf](wdm.pdf)
 
 1. 读入芯片的长度和宽度，记为  $ N,M $ 。
 
