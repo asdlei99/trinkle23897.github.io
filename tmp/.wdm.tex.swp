@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage[linesnumbered,boxed]{algorithm2e}
+\usepackage{struktex}
+\title{algorithm}
+\author{n+e}
+\date{July 2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Algorithm}
+\begin{struktogramm}(95,40)[Text]
+\assign{\(z \gets - \frac{1}{x}\)}
+\case[10]{3}{3}{Signum(x)}{-1}
+\assign{\(z \gets - \frac{1}{x}\)}
+\switch{0}
+\assign{Ausgabe: Division durch 0}
+\switch[r]{1}
+\assign{\(z \gets \frac{1}{x}\)} \caseend
+\end{struktogramm} 
+
+\begin{struktogramm}(95,40)
+\assign{\(I \gets 1\)}
+\while[10]{\(I < 99\)}
+\assign{\(J \gets I+1\)}
+\until{\(J < 100\)}
+\sub{Swap, if valid: \( ARRAY(I) > ARRAY(J) \)}
+\assign{\(J \gets J+1\)}
+\untilend
+\assign{\(I \gets I+1\)}
+\whileend
+\end{struktogramm}
+
+\begin{centernss}
+\begin{struktogramm}(90,35)
+\ifthenelse{4}{2}
+{Is Flag for Output on Printer set?}{\sTrue}{\sFalse}%
+\assign{Output on Printer diverted}
+\change
+\assign{Output on Screen}
+\ifend
+\end{struktogramm}
+\end{centernss}
+\begin{algorithm}
+%\small
+%\scriptsize
+\KwIn{当前芯片的布线状态，其中靠近原点的子区域尚未布线}
+\KwOut{在该子区域布线之后的芯片布线状态}
+\While{子区域中连线起点尚未全部连接 $\land$ 有剩余连线终点}{
+	\If{已经到达芯片角落}{
+		退出该循环\;
+	}
+	\If{连线终点落后于连线起点}{
+		选择$n_x$（$n_y$）所在的那一列（行），左一个右一个地连出去，直到边界被连接的连线终点连续排列\;
+	}
+	Call function Link\_in to obtain $pt_{x_1},pt_{y_1}$，以及备选的两条线路\;
+	计算$f_x,f_y$的值，如果某个值为1则置该侧线路长度为$+\infty$\;
+	\If{某侧的$f$值不为$1\land$计算该侧线路失败}{\Return{该子区域无合法布线状态\;}}
+	比较两条线路长度，将长度小的一条记录至布线状态中\;
+	\If{另一条线路的起点如果连向对侧的长度比该线路要长}{将该线路也记录至布线状态中\;}
+}
+\If{子区域中连线起点尚未全部连接 $\land$ 无剩余连线终点}{\Return{该子区域无合法布线状态\;}}
+\While{子区域中连线起点尚未全部连接}{
+	\uIf{选取某一列全部连接至$x$轴的总长度要比选取某一行全部连接至$y$轴的总长度要短}{
+		选取$n_x$所在的一列，将其全部连接至$x$轴\;
+	}
+	\Else{
+		选取$n_y$所在的一行，将其全部连接至$y$轴\;
+	}
+}
+\Return{当前芯片的布线状态}\;
+\caption{子区域中的布线算法.}
+\label{alg:dc}
+\end{algorithm}
+\begin{algorithm}
+%\small
+%\scriptsize
+\KwIn{The length $node_x$ and width $node_y$ of the biochip.}
+\KwOut{最小的间隔$d$、布线总长度和布线方案}
+\If{$\min\{N,M\}\le 2$}{
+    直接构造出方案并返回\;
+}
+将连线起点划分成4个子区域\;
+确定$d$的上下界，使用二分法判定在该状态下是否有可行方案\;
+\ForEach{二分出来的 $d$}
+{
+	Calculating total length and width of biochip\;
+	Connecting origins near central axis\;
+	\For{每个子区域}{
+		Call Algorithm~\ref{alg:dc} to obtain 子区域中的布线方案 with 当前芯片布线状态 as input\;
+		\If{该函数返回布线失败}{
+			$d$不合法，退出该循环\;
+		}
+		绕坐标轴进行坐标变换\;
+	}
+	计算下一个需要判断的$d$\;
+}
+\Return{最小的间隔$d$、布线总长度和布线方案}\;
+\caption{Complete routing method of RRBI.？？？？}
+\label{alg:rule}
+\end{algorithm}
+\end{document}
