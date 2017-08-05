@@ -9,7 +9,7 @@ layout: post
 <!-- more -->
 
 0. 修改/etc/apt/sources.list 为tuna镜像源
-1. vim: you complete me
+1. vim: vundle, you complete me, jedi-vim
 2. sublime: autofilename, brackethighlighter,colorhighlighter,codeformatter/sublimeastyleformatter?,docblockr,...
 2. git,git-lfs
 2. axel：多线程下载

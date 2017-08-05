@@ -1,8 +1,7 @@
 \documentclass{article}
-\usepackage[utf8]{inputenc}
 \usepackage{ctex}
 \usepackage[linesnumbered,boxed]{algorithm2e}
-
+\usepackage{struktex}
 \title{algorithm}
 \author{n+e}
 \date{July 2017}
@@ -12,6 +11,38 @@
 \maketitle
 
 \section{Algorithm}
+\begin{struktogramm}(95,40)[Text]
+\assign{\(z \gets - \frac{1}{x}\)}
+\case[10]{3}{3}{Signum(x)}{-1}
+\assign{\(z \gets - \frac{1}{x}\)}
+\switch{0}
+\assign{Ausgabe: Division durch 0}
+\switch[r]{1}
+\assign{\(z \gets \frac{1}{x}\)} \caseend
+\end{struktogramm} 
+
+\begin{struktogramm}(95,40)
+\assign{\(I \gets 1\)}
+\while[10]{\(I < 99\)}
+\assign{\(J \gets I+1\)}
+\until{\(J < 100\)}
+\sub{Swap, if valid: \( ARRAY(I) > ARRAY(J) \)}
+\assign{\(J \gets J+1\)}
+\untilend
+\assign{\(I \gets I+1\)}
+\whileend
+\end{struktogramm}
+
+\begin{centernss}
+\begin{struktogramm}(90,35)
+\ifthenelse{4}{2}
+{Is Flag for Output on Printer set?}{\sTrue}{\sFalse}%
+\assign{Output on Printer diverted}
+\change
+\assign{Output on Screen}
+\ifend
+\end{struktogramm}
+\end{centernss}
 \begin{algorithm}
 %\small
 %\scriptsize
