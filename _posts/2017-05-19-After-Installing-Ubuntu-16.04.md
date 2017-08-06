@@ -27,7 +27,7 @@ layout: post
 11. shadowsocks-libev
 11. unity-tweak-tool+macbuntu：把ubuntu修改成mac界面，不建议修改登录界面可能会有奇怪的事情发生
 12. indicator-multiload
-13. ipython,ipython3,pypy,pip3,pip2: 今天刚发现milq下面有python-scientic的安装脚本 # numpy,scipy,pandas,tensorflow,nltk,matplotlib,thefuck
+13. ipython,ipython3,pypy,pip3,pip2: 今天刚发现milq下面有python-scientific的安装脚本 # numpy,scipy,pandas,tensorflow,nltk,matplotlib,thefuck
 14. virtualbox
 16. wps office
 17. wine
