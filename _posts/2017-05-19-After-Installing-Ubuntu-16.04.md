@@ -34,3 +34,7 @@ layout: post
 18. openvpn
 19. mpv
 20. 剩下的没想起来
+
+```
+sudo apt install vim git axel texlive-full latex-cjk-all gummi proxychains libnfc-dev libboost-all-dev qtcreator shadowsocks unity-tweak-tool indicator-multiload ipython ipython3 pypy python-pip python3-pip virtualbox wine openvpn mpv
+```
