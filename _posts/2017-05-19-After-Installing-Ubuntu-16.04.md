@@ -27,7 +27,7 @@ layout: post
 11. shadowsocks-libev
 11. unity-tweak-tool+macbuntu：把ubuntu修改成mac界面，不建议修改登录界面可能会有奇怪的事情发生
 12. indicator-multiload
-13. ipython,ipython3,pypy,pip3,pip2: numpy,scipy,pandas,tensorflow,nltk,matplotlib,thefuck
+13. ipython,ipython3,pypy,pip3,pip2: 今天刚发现milq下面有python-scientic的安装脚本 # numpy,scipy,pandas,tensorflow,nltk,matplotlib,thefuck
 14. virtualbox
 16. wps office
 17. wine
@@ -37,4 +37,5 @@ layout: post
 
 ```
 sudo apt install vim git axel texlive-full latex-cjk-all gummi proxychains libnfc-dev libboost-all-dev qtcreator shadowsocks unity-tweak-tool indicator-multiload ipython ipython3 pypy python-pip python3-pip virtualbox wine openvpn mpv
+sudo apt install macbuntu-os-icons-lts-v7 macbuntu-os-ithemes-lts-v7 slingscold albert plank unity-tweak-tool gnome-tweak-tool
 ```
