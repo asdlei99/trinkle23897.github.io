@@ -1,1 +1,1 @@
-git add .;git commit -m "upd blog";proxychains git push
+git add .;git commit -m "upd blog";proxychains git push origin HEAD:master
