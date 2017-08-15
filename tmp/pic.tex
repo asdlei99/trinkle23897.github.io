@@ -1,8 +1,9 @@
 \documentclass{article}
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra,subfigure}
 \usepackage{ctex,hyperref,graphicx,pstricks,listings,stackengine,tikz,listings}
-\usetikzlibrary{angles}
-\usetikzlibrary{quotes,patterns,decorations.pathreplacing}
+\usetikzlibrary{angles,quotes,patterns,decorations.pathreplacing,mindmap}
+%\pgfdeclarelayer{background}
+%\pgfsetlayers{background}
 \graphicspath{{pic/}}
 \definecolor{primaryD}{HTML}{00695C}
 \lstset{
@@ -21,6 +22,225 @@
 }
 \begin{document}
 
+
+\begin{figure}[htbp]
+%%\vspace{-0.45cm}
+\centering
+\subfigure[正着连]
+{
+\begin{minipage}[b]{0.45\columnwidth}
+\centering
+\resizebox{\columnwidth}{!}{\begin{tikzpicture}[scale=0.1,decoration=brace]
+\draw[dashed](20,-52)--(20,-36);
+\draw[dashed](20,-52)--(36,-52)node[right]{$B$};
+\node[below](O)at(20,-52){$O$};
+\node[fill=gray,shape=circle,scale=0.35](s) at (28,-32){};
+\node[fill=gray,shape=circle,scale=0.35](tl) at (26,-52){};
+\node[fill=gray,shape=circle,scale=0.35](tr) at (31,-52){};
+\draw[->](tl)--(26,-46);
+\draw[->](26,-46)--(26,-42)--(27,-42)--(27,-38);
+\draw[->](27,-38)--(27,-35)--(28,-35)--(s);
+\draw[color=gray](28,-36)--(28,-39)--(29,-39)--(29,-46)--(30,-46)--(30,-52);
+\draw[color=gray](28,-40)--(28,-43)--(27,-43)--(27,-52);
+\draw[color=lightgray](28,-44)--(28,-47)--(29,-47)--(29,-52);
+\draw[color=lightgray](28,-48)--(28,-52);
+\node[above] at (28,-32){$S^\prime=S$};
+\node[below] at (26,-52){$T_l$};
+\node[below right]at (31,-52){$T_r$};
+\node[fill=gray,shape=circle,scale=0.25] at (28,-36){};
+\node[fill=gray,shape=circle,scale=0.25] at (28,-40){};
+\node[fill=gray,shape=circle,scale=0.25] at (28,-44){};
+\node[fill=gray,shape=circle,scale=0.25] at (28,-48){};
+\draw[decorate,line width=1pt,align=center](33,-30)--node[right]{$lim$\\(=5)}(33,-50);%(c) routing based on Rule-1 and Rule-2.
+\end{tikzpicture}
+}
+\label{fig:back:a}
+\end{minipage}%
+}%
+\hfil
+%%\vspace{-0.25cm}
+\subfigure[反着连]
+{
+\begin{minipage}[b]{0.45\columnwidth}
+\centering
+\resizebox{\columnwidth}{!}{
+}
+\label{fig:mask:b}
+\end{minipage}%
+}%
+\caption{back is good}
+\label{fig:back}
+%\vspace{-0.2cm}
+%\vspace{-0.25cm}
+\end{figure}
+
+\end{document}
+
+	\draw[dashed](3,-0.5)--(3,4.5);
+	\draw[dashed](-0.5,2)--(6.5,2);
+	\draw[](2.8,0) .. controls (3,2) .. (3.2,0)--cycle;
+	\draw[](2.8,4) .. controls (3,2) .. (3.2,4)--cycle;
+	\draw[](0,1.8) .. controls (2.5,2) .. (0,2.2)--cycle;
+	\draw[](6,1.8) .. controls (3.5,2) .. (6,2.2)--cycle;
+	%\draw[pattern color=red, pattern=north east lines](0.5,0)--(0.5,0.5)--(0,0.5)--(0,0)--cycle;
+	%\draw[pattern color=red, pattern=north east lines](0.5,4)--(0.5,3.5)--(0,3.5)--(0,4)--cycle;
+	%\draw[pattern color=red, pattern=north east lines](5.5,4)--(5.5,3.5)--(6,3.5)--(6,4)--cycle;
+	%\draw[pattern color=red, pattern=north east lines](5.5,0)--(5.5,0.5)--(6,0.5)--(6,0)--cycle;
+	%\node (corner) at (8,3.75) {Corner State};
+	%\draw [->] (corner) -- (6.1,3.75);
+	\node (central) at (8,3) {Central State};
+	\draw [->] (central) -- (6.1,2.1);
+	\node (general) at (8,1) {General State};
+	\draw [->] (general) -- (6.1,1);
+    \node(r0)at(1.5,1){$R_0$};
+    \node(r1)at(4.5,1){$R_1$};
+    \node(r2)at(1.5,3){$R_2$};
+    \node(r3)at(4.5,3){$R_3$};
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=0.17,decoration=brace]
+\draw[->] (0,0) -- (38,0) node[right] {$n$};
+\draw[->] (0,0) -- (0,26) node[above] {$m$};
+\node[below left]at(0,0){$O$};
+\draw (36,0)--(36,24)--(0,24);
+\foreach \x in {3,6,...,33}
+\foreach \y in {3,6,...,21}
+\node[shape=circle,scale=2,color=gray]at(\x,\y){.};
+\foreach \y in {9,18,21}
+\foreach \x in {21,24,...,33}\node[shape=circle,scale=2.1,color=white]at(\x,\y){.};
+\foreach \y in {15,18,21}
+\foreach \x in {3,6,...,15}\node[shape=circle,scale=2.1,color=white]at(\x,\y){.};
+\foreach \x in {1,...,11}\node[below]at(3*\x,0){\x};
+\foreach \y in {1,...,7}\node[left]at(0,3*\y){\y};
+\draw[color=gray](3,12)--(0,12);
+\draw[color=gray](6,12)--(4,12)--(4,11)--(0,11);
+\draw[color=gray](9,12)--(7,12)--(7,13)--(0,13);
+\draw[color=gray](12,12)--(10,12)--(10,11)--(5,11)--(5,10)--(0,10);
+\draw[color=gray](15,12)--(13,12)--(13,13)--(8,13)--(8,14)--(0,14);
+\draw[color=gray](18,3)--(18,0);
+\draw[color=gray](18,6)--(18,4)--(19,4)--(19,0);
+\draw[color=gray](18,9)--(18,7)--(17,7)--(17,0);
+\draw[color=gray](18,15)--(18,17)--(19,17)--(19,24);
+\draw[color=gray](18,18)--(18,20)--(17,20)--(17,24);
+\draw[color=gray](18,21)--(18,24);
+\draw[color=gray](21,12)--(23,12)--(23,11)--(28,11)--(28,10)--(36,10);
+\draw[color=gray](24,12)--(26,12)--(26,13)--(31,13)--(31,14)--(36,14);
+\draw[color=gray](27,12)--(29,12)--(29,11)--(36,11);
+\draw[color=gray](30,12)--(32,12)--(32,13)--(36,13);
+\draw[color=gray](33,12)--(36,12);
+\draw [decorate,line width=1pt,color=black] (37,14) -- node[right,color=black]{$~2d-1=5$}(37,10);
+\draw [decorate,line width=1pt,color=black] (0.2,15.5) -- node[above,color=black,align=center]{No more than\\~$l_x=\lfloor N/2\rfloor=5$}(15,15.5);
+\draw [decorate,line width=1pt,color=black,align=center] (20,23.8) -- node[right,color=black]{~No more than\\~$l_y=\lfloor M/2\rfloor=3$}(20,15);
+\draw[<->,line width=1pt] (12,11)..controls(18,9)..(24,11);
+\node[right]at(19,8){Centrosymmetric};
+\end{tikzpicture}
+\caption{Rule-central for odd case, $N=11$, $M=7$, $d=3$}
+\label{fig:rcodd}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\draw[->] (0,0) -- (32,0) node[right] {$x$};
+\draw[->] (0,0) -- (0,28) node[above] {$y$};
+\node[below left]at(0,0){$O$};
+\foreach \x in {4,8,...,28}
+\foreach \y in {4,8,...,24}
+\node[shape=rectangle,scale=2] at(\x,\y){.};
+%\draw[](4,4)--(0,4);
+%\draw[](4,8)--(0,8);
+%\draw[](4,12)--(0,12);
+\draw[](4,16)--(0,16);
+\draw[](4,20)--(0,20);
+\draw[](4,24)--(0,24);
+%\draw[](8,4)--(8,0);
+%\draw[](8,8)--(5,8)--(5,9)--(0,9);
+%\draw[](8,12)--(5,12)--(5,11)--(0,11);
+\draw[](8,16)--(5,16)--(5,15)--(0,15);
+\draw[](8,20)--(5,20)--(5,19)--(0,19);
+\draw[](8,24)--(5,24)--(5,25)--(0,25);
+%\draw[](12,4)--(12,0);
+%\draw[](12,8)--(12,5)--(11,5)--(11,0);
+%\draw[](12,12)--(9,12)--(9,11)--(6,11)--(6,10)--(0,10);
+%\draw[](12,16)--(10,16)--(10,14)--(7,14)--(7,13)--(0,13);
+\draw[](12,20)--(9,20)--(9,19)--(6,19)--(6,18)--(0,18);
+\draw[](12,24)--(9,24)--(9,23)--(0,23);
+\draw[](16,4)--(16,0);
+\draw[](16,8)--(16,5)--(15,5)--(15,0);
+%\draw[](16,12)--(16,10)--(14,10)--(14,7)--(13,7)--(13,0);
+%\draw[](16,16)--(16,13)--(15,13)--(15,11)--(13,11)--(13,9)--(11,9)--(11,6)--(10,6)--(10,0);
+\draw[](16,20)--(13,20)--(13,19)--(10,19)--(10,18)--(7,18)--(7,17)--(0,17);
+\draw[](16,24)--(13,24)--(13,23)--(10,23)--(10,22)--(0,22);
+\draw[](20,4)--(20,0);
+\draw[](20,8)--(20,5)--(19,5)--(19,0);
+\draw[](20,12)--(20,9)--(19,9)--(19,6)--(18,6)--(18,0);
+\draw[dashed](20,16)--(20,14)--(18,14)--(18,11)--(17,11)--(17,9)--(15,9)--(15,6)--(14,6)--(14,0);
+\draw[dashed](20,20)--(17,20)--(17,19)--(14,19)--(14,18)--(11,18)--(11,17)--(9,17)--(9,15)--(6,15)--(6,14)--(0,14);
+%\draw[dotted](20,16)--(19.8,14.2)--(0,13.8);
+\draw[](20,24)--(17,24)--(17,23)--(14,23)--(14,22)--(11,22)--(11,21)--(0,21);
+\draw[](24,4)--(24,0);
+\draw[](24,8)--(24,5)--(25,5)--(25,0);
+\draw[](24,12)--(24,9)--(23,9)--(23,0);
+\draw[](24,16)--(24,13)--(23,13)--(23,10)--(22,10)--(22,0);
+\draw[](24,20)--(24,17)--(23,17)--(23,14)--(22,14)--(22,11)--(21,11)--(21,0);
+\draw[](24,24)--(24,21)--(23,21)--(23,18)--(22,18)--(22,15)--(21,15)--(21,13)--(19,13)--(19,10)--(18,10)--(18,7)--(17,7)--(17,0);
+\draw[](28,4)--(28,0);
+%\draw[](28,8)--(28,5)--(29,5)--(29,0);
+\draw[](28,12)--(28,9)--(27,9)--(27,0);
+%\draw[](28,16)--(28,13)--(29,13)--(29,6)--(30,6)--(30,0);
+\draw[](28,20)--(28,17)--(27,17)--(27,10)--(26,10)--(26,0);
+%\draw[](28,24)--(28,21)--(29,21)--(29,14)--(30,14)--(30,7)--(31,7)--(31,0);
+\foreach \x in {1,...,25}
+\node[shape=circle,scale=2]at(0,\x){.};
+\foreach \x in {1,...,28}
+\node[shape=circle,scale=2]at(\x,0){.};
+\node[left]at(0,14){$t_y$};
+\node[left]at(0,20){$n_y=5$};
+\node[below]at(14,0){$t_x$};
+\node[below]at(20,0){$n_x=5$};
+\node at(15,26){Upper Triangular region};
+\node[align=center] at (32,14){Lower\\Triangular\\Region};
+\node (cy) at(14,16){$c_y$};
+\draw[->] (cy)--(11.3,17.7);
+\node (cx) at (14,11){$c_x$};
+\draw[->] (cx)--(16.7,10);
+\node[above]at(20,20){$pt_y$};
+\node[above]at(20,16){$pt_x$};
+\end{tikzpicture}
+\caption{xxx general state xxx in $R_0$}
+\label{fig:rg1}
+\end{center}
+\end{figure}
+\begin{tikzpicture}
+[root concept/.append style={concept color=blue!20,minimum size=2cm},
+%level 1 concept/.append style={sibling angle=45},
+mindmap]
+\node [concept] {Complete Method}
+[clockwise from=-60]
+child { node[concept] (c1) {Rule-$R_0$}}
+child { node[concept] (c2) {Rule-Central}};
+\draw [concept connection] (c1) edge (c2);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\tikzset{every node/.append style={scale=0.6}}
+\path[mindmap,concept color=blue!20]
+node[concept] {Complete Method}
+[clockwise from=-60]
+child[concept color=green!50] {node[concept](r0) {Rule-$R_0$}}
+child[concept] {
+node[concept] {Rule-Central}
+[clockwise from=-60]
+child[concept] { 
+node[concept](r2) {Rule-2}
+[clockwise from=-60]
+child[concept]{node[concept](r1){Rule-1}}
+}
+};
+\draw [concept connection] (r0) edge (r1) edge(r2);
+\end{tikzpicture}
 \begin{tikzpicture}[scale=0.1]
 \draw[color=violet](28,-4)--(28,-0);
 \draw[color=violet](28,-8)--(28,-5)--(27,-5)--(27,-0);
@@ -43,7 +263,7 @@
 \draw[color=lightgray](0,\x)--(14,\x);
 \draw[->] (0,0) -- (15,0) node[right] {$x$};
 \draw[->] (0,0) -- (0,11) node[above] {$y$};
-\node[below,left]at(0,0){$O$};
+\node[below left]at(0,0){$O$};
 \foreach \x in {1,2,...,14}
 \node[below]at(\x,-0.3){$\x$};
 \foreach \x in {1,2,...,10}
@@ -546,7 +766,3 @@
 \label{fig:rule1}
 %%\vspace{-0.25cm}
 \end{figure}
-
-
-
-\end{document}
