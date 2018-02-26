@@ -6,7 +6,7 @@ active: about
 
 Disqus的评论似乎被墙了？
 
-关于我
+[关于我](https://trinkle23897.github.io/zh/resume.html)
 
 首先，trinkle 其实是我当时随便打的几个字母，后来用习惯了就这样了。我的真实姓名是翁家翌，通常打作n+e
 
