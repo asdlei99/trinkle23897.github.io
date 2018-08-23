@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0054)https://people.eecs.berkeley.edu/~bmild/kpn/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110862391-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110862391-2');
+</script>
+
+
+<title>URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips</title>
+<link rel="shortcut icon" href="https://trinkle23897.github.io/favicon.ico">
+<link rel="stylesheet" href="./proj_files/style.css">
+<link rel="stylesheet" href="./proj_files/font.css">
+
+<style type="text/css">
+  #myvalignContainer1O { position:relative }
+  #myvalignContainer1I { position:absolute; top:50%; height:10em; margin-top:-5em }
+</style><style type="text/css">
+  #myvalignContainer2 { line-height:4em }
+</style></head>
+
+
+
+
+<body>
+
+
+<!-- Title -->
+<div class="container">
+
+<span class="title">URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips</span>
+
+<table align="center" border="0" width="1000" class="authors">
+  <tbody><tr>
+  <td class="author"> <a href="https://trinkle23897.github.io/">Jiayi Weng</a><sup>1</sup></td>
+  <td class="author"> <a href="http://www.cs.nthu.edu.tw/~tyho/">Tsung-Yi Ho</a><sup>2</sup></td>
+  <td class="author"> Weiqing Ji<sup>1</sup></td>
+  <td class="author"> <a href="http://1.202.132.116:8080/cms/wwwroot/baswqhsys/zxcy/zxsz/13763.shtml">Peng Liu</a><sup>1</sup></td>
+  <td class="author"> Mengdi Bao<sup>1</sup></td>
+  <td class="author"> <a href="http://learn.tsinghua.edu.cn:8080/2009990119/hailongyao.html">Hailong Yao</a><sup>1</sup></td>
+  </tr></tbody>
+</table>
+
+<table align="center" border="0" width="1000" class="affiliations">
+<tbody>
+  <tr>
+    <td class="affliation" align="center">
+      <sup>1</sup><a href="http://www.tsinghua.edu.cn/publish/thu2018en/index.html">Tsinghua University</a>
+          
+      <sup>2</sup><a href="http://nthu-en.web.nthu.edu.tw/bin/home.php">National Tsing Hua University</a>
+    </td>
+  </tr>
+</tbody>
+</table>
+
+<br>
+<br>
+<!-- 
+<table align="center"><tbody><tr>
+<td><center><img src="./proj_files/teaser.png" width="1100"></center></td>
+</tr>
+<tr><td>
+<table border="0">
+
+<tbody><tr><td class="caption">A qualitative evaluation of our model on real image bursts from a handheld camera in a low-light environment.
+The reference frame from the input burst (a) is sharp, but noisy.
+Noise can be reduced by simply averaging (b) a burst of similar images, but this can fail in the presence of motion.
+Our approach (f) learns to use the information present in the entire burst to denoise a single frame, producing lower noise and avoiding artifacts compared to baseline techniques (c - e).</td></tr>
+</tbody></table>
+
+ -->
+<!-- Abstract -->
+<div class="section">
+<span class="section-title">Abstract </span>
+<p> In high-throughput drug screening applications, as manual drug sample delivery is time-consuming and error-prone, there is an urgent need for accurate and efficient drug sample delivery biochip for large-scale microwell arrays. 
+This paper proposes a new microfluidic biochip architecture, where drugs are automatically prepared with different concentration values, and then delivered into multiple microwells. For the large-scale drug sample delivery biochips, the routing of drug sample delivery channels is a very challenging task without effective routing solutions. This paper proposes an ultrafast rule-based escape routing method, called URBER, to address the large-scale routing of drug sample delivery channels, which scales well in both runtime and memory for large problem size. URBER runs very fast because it routes the channels based on a set of pre-defined rules, which avoids the runtime consumed in solution space exploration. All the benchmarks for 30 <= N, M <= 100 have been tested, where N and M are the number of columns and rows of the terminal array. Among these benchmarks, about ~91.9% are routed with optimal solutions, and the runtime is order of magnitudes faster than the optimal min-cost flow-based methods (speedup is from ~600 to ~340k). Specifically, for all the benchmarks with 3/4 < M/N < 4/3, optimal routing solutions are always obtained. URBER also shows the promise of routing large-scale designs with up to 500k terminals efficiently.</p>
+<!-- <p class="bibtex">
+@article{xue17toflow,
+&nbsp; author = {Xue, Tianfan and Chen, Baian and Wu, Jiajun and Wei, Donglai and Freeman, William T},
+&nbsp; title = {Video Enhancement with Task-Oriented Flow},
+&nbsp; journal = {arXiv},
+&nbsp; year = {2017}
+}
+</p> -->
+
+
+</div>
+
+<div class="section">
+<span class="section-title">Acknowledgement</span>
+<p>
+The work of H. Yao was supported in part by the National Natural Science Foundation of China (61674093) and Tsinghua University Initiative Scientific Research Program (20141081203).
+</p><p>
+The work of T.-Y. Ho was supported in part by the Ministry of Science and Technology of Taiwan, under Grant MOST 105-2221-E-007-118-MY3 and 104-2220-E-007-021 and in part by the Technical University of Munich-Institute for Advanced Study, funded by the German Excellence Initiative and the European Union Seventh Framework Program under grant agreement no 291763.
+</p>
+</div>
+
+<div class="section">
+<span class="section-title">Result</span>
+<p>
+  <center>
+    <embed src="./proj_files/urber_runtime.pdf" width="640" height="480">
+    <br/>
+    <img src="proj_files/urber_table.png">
+    <br/>
+    <embed src="proj_files/urber_1.pdf" width="640" height="200"></embed>
+    <p>Min-Cost Flow result with benchmark 72x13</p>
+    <embed src="proj_files/urber_2.pdf" width="640" height="200"></embed>
+    <p>Max Flow result with benchmark 72x13</p>
+    <embed src="proj_files/urber_3.pdf" width="640" height="200"></embed>
+    <p>URBER result with benchmark 72x13</p>
+  </center>
+</p>
+</div>
+
+<div class="section">
+<span class="section-title">Video demos</span>
+<p><a href="/video/demo.zip">Here</a> is a zip file including these videos with high quality.</p>
+<center>
+<p>
+  <p>Benchmark 30x30:</p>
+  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/FH_IYaakolQ" frameborder="0" allowfullscreen></iframe></p>
+</p>
+<p>
+  <p>Benchmark 40x30:</p>
+  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/0OM_IgcLpr4" frameborder="0" allowfullscreen></iframe></p>
+</p>
+<p>
+  <p>Benchmark 80x20:</p>
+  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/QMYImtpW0z4" frameborder="0" allowfullscreen></iframe></p>
+</p>
+</center>
+</div>
+
+</td></tr></tbody></table></div></body></html>
