@@ -1,8 +1,8 @@
 # Detailed Scores
 
-[返回](/cv/en.html)
+[Back](/cv/en.html)
 
-GPA：3.50/4 (15%)
+GPA：3.50/4.00 (15%)
 
 I have complete 119 credits of courses (out of 170 required for graduation). These are completed courses about computer science:
 
