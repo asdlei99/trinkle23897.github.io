@@ -14,12 +14,12 @@ Undergraduate, Department of Computer Science and Technology, Tsinghua Universit
 | Year | Event                                                        | Link                                                         |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 2017 | Friend of Tsinghua, Guangzhou Pharmaceutical Holdings Limited Scholarship |                                                              |
-| 2017 | 第9次CCF软件能力认证（CSP认证），470/500（全国最高分）       | [Transcript](/pdf/csptranscript.pdf)                         |
+| 2017 | 第11次CCF软件能力认证（CSP认证），470/500（全国最高分）      | [Transcript](/pdf/csptranscript.pdf)                         |
 | 2016 | 18th annual Electronic Design Competition in Tsinghua University, Third prize |                                                              |
-| 2015 | 第32届全国青少年信息学奥林匹克竞赛（NOI2015），三等奖（铜牌） | [Winners (in Chinese)](http://history.ccf.org.cn/resources/2567814757332/news/NOI2015%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%952015-12-25-10_52_58.htm) |
-| 2015 | 第27届国际信息学奥林匹克中国队选拔赛暨全国信息学奥林匹克精英赛（CTSC2015），银牌 | [Winners (in Chinese)](http://www.noi.cn/noi-news/huojiang/666-ccf-ctsc2015) |
-| 2015 | 第九届亚洲和太平洋地区信息学奥林匹克中国赛区（APIO2015），银牌 | [Winners (in Chinese)](http://www.noi.cn/noi-news/huojiang/667-apio2015) |
-| 2015 | 2015 年全国青少年信息学奥林匹克冬令营（WC2015），二等奖      | [Winners (in Chinese)](http://download.noi.cn/T/2015/NOI2015dly.htm) |
+| 2015 | 32nd National Olympiad in Informatics (NOI2015), Third prize (bronze medal) | [Winners (in Chinese)](http://history.ccf.org.cn/resources/2567814757332/news/NOI2015%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%952015-12-25-10_52_58.htm) |
+| 2015 | The Chinese Team Selection Contest for IOI 2015 (CTSC2015), Second prize (silver medal) | [Winners (in Chinese)](http://www.noi.cn/noi-news/huojiang/666-ccf-ctsc2015) |
+| 2015 | 9th  Asia-Pacific Informatics Olympiad (China District), Second prize (silver medal) | [Winners (in Chinese)](http://www.noi.cn/noi-news/huojiang/667-apio2015) |
+| 2015 | 2015 National Youth Informatics Olympic Competition Winter Camp, Second prize | [Winners (in Chinese)](http://download.noi.cn/T/2015/NOI2015dly.htm) |
 
 ## Publications
 
