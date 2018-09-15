@@ -1,5 +1,7 @@
 # 翁家翌（Jiayi Weng）
 
+[英文版本 / English version](/cv/en.html)
+
 清华大学计算机系，本科生
 
 [wengjy16@mails.tsinghua.edu.cn](mailto:wengjy16@mails.tsinghua.edu.cn)

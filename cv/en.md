@@ -1,91 +1,92 @@
 # Jiayi Weng (翁家翌)
 
+[Chinese version / 中文版本](/cv/zh.html)
+
 Undergraduate, Department of Computer Science and Technology, Tsinghua University, China
 
 [wengjy16@mails.tsinghua.edu.cn](mailto:wengjy16@mails.tsinghua.edu.cn)
 
 ## Education
 
-- **2016 -**, Undergraduate, Department of Computer Science and Technology, Tsinghua University, China; GPA：3.50/4.00（ranking 15%），[details](/cv/courses_en.html)
+- **2016 -**, Undergraduate, Department of Computer Science and Technology, Tsinghua University, China; GPA：3.50/4.00 (ranking 15%) ,  [details](/cv/courses_en.html)
 - **2013 - 2016**, Fuzhou No.1 High School
 
-## Personal Awards
+## Personal Award
 
 | Year | Event                                                        | Link                                                         |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 2017 | Friend of Tsinghua, Guangzhou Pharmaceutical Holdings Limited Scholarship |                                                              |
-| 2017 | 第11次CCF软件能力认证（CSP认证），470/500（全国最高分）      | [Transcript](/pdf/csptranscript.pdf)                         |
+| 2017 | 11th CCF Computer Software Certification, Passed with highest score | [Transcript (in Chinese)](/pdf/csptranscript.pdf)            |
 | 2016 | 18th annual Electronic Design Competition in Tsinghua University, Third prize |                                                              |
 | 2015 | 32nd National Olympiad in Informatics (NOI2015), Third prize (bronze medal) | [Winners (in Chinese)](http://history.ccf.org.cn/resources/2567814757332/news/NOI2015%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%952015-12-25-10_52_58.htm) |
 | 2015 | The Chinese Team Selection Contest for IOI 2015 (CTSC2015), Second prize (silver medal) | [Winners (in Chinese)](http://www.noi.cn/noi-news/huojiang/666-ccf-ctsc2015) |
 | 2015 | 9th  Asia-Pacific Informatics Olympiad (China District), Second prize (silver medal) | [Winners (in Chinese)](http://www.noi.cn/noi-news/huojiang/667-apio2015) |
 | 2015 | 2015 National Youth Informatics Olympic Competition Winter Camp, Second prize | [Winners (in Chinese)](http://download.noi.cn/T/2015/NOI2015dly.htm) |
 
-## Publications
+## Publication
 
 Shihong Song, **Jiayi Weng**, Hang Su, Dong Yan, Jun Zhu   [**Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning**](/cv/viz2018.html)   submitted to AAAI 2019 (under review)
 
 **Jiayi Weng**, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, Hailong Yao   [**URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips**](/cv/urber.html)   submitted to TCAD (in minor revision)
 
-## 竞赛
+## Competition
 
 ### Visual Doom AI Competition at [CIG2018](https://project.dke.maastrichtuniversity.nl/cig2018/) Singleplayer Track (1), Winner
 
-《毁灭战士 Doom》是1993 年推出的 FPS（First Person Shooter，第一人称射击）类游戏，该游戏是 AI 研究热门试验场。2016 年，基于游戏的 ViZDoom AI 竞赛诞生，研究能获取原始视觉信息的强化学习技术，因其高挑战性吸引众多顶级实验室，如 2016 年冠军 Facebook FAIR（Track 1）和英特尔（Track 2）、2017 年冠军 Marvin（Track 1）和卡耐基梅隆大学（Track 2）。
+Doom is the FPS (First Person Shooter) game launched in 1993, which is a popular test site for AI research. In 2016, the game-based ViZDoom AI competition was born, researching reinforcement learning techniques that capture raw visual information, and appealing to many top-level laboratories such as the 2016 champions Facebook FAIR (Track 1) and Intel (Track 2), 2017 Champion Marvin (Track 1) and Carnegie Mellon University (Track 2).
 
-ViZDoom 2018 Track 1 是AI单人闯关模式，考核标准是最短时间内闯最多的关口。与以往经典的死亡竞赛不同，需要 AI 能同时完成探索路径、收集装备、躲避陷阱、杀死怪物、寻找出口等诸多复杂任务，对 AI 的任务理解和环境认知能力要求极高。在 53 个国际参赛团提交的 204 个机器人中，只有 6 个团队实现了有意义的闯关。
+ViZDoom 2018 Track 1 is the single-player mode. The agent has to beat random generated levels as fast as possible. Different from the classic deathmatch scenario in the past, AI should complete many complicated tasks such as exploring, collecting resources, avoiding traps, killing monsters, and finding final goal. It requires extremely high task understanding and environmental awareness of AI. Of the 204 robots submitted by 53 international teams, only 6 teams achieved meaningful results.
 
-针对该复杂任务，我们团队提出了环境信息引导的分层强化学习技术，在对环境信息有效感知基础上，融合环境反馈和强化学习的奖励信号，引导分层强化学习训练，使得 AI 闯关表现优异，预赛中以绝对优势保持第一，直至决赛锁定冠军。
+Facing with this complex task, our team proposed a hierachical reinforcement learning method guided by environmental information. Based on the effective perception of environmental information, our method integrates environmental feedback and reinforcement learning reward signals, making AI excellent performance. We stayed first in absolute advantage in the preliminaries and won the championship in the final.
 
-链接：[官方比赛结果](http://vizdoom.cs.put.edu.pl/competition-cig-2018/competition-results)，[中文媒体报道](https://www.jiqizhixin.com/articles/2018-08-23-12)。
+Here is the link for [the official results of the competition](http://vizdoom.cs.put.edu.pl/competition-cig-2018/competition-results) and [the news report of Chinese media](https://www.jiqizhixin.com/articles/2018-08-23-12).
 
-## 项目
+## Project
 
-### 课程项目
+### Course Project
 
-- 真实感物体渲染（实现了路径追踪(Path Tracing)、渐进式光子映射(PPM)、随机渐进式光子映射(SPPM)等算法，渲染包含Bezier曲面的三维模型，被评为优秀大作业）：[代码](https://github.com/Trinkle23897/Computational-Graphics-THU-2018) - 计算机图形学课程
-- 用一个自己设计的算法实现的多点对的逃逸布线路径寻找算法：[演示](https://trinkle23897.github.io/demo.html) - 面向对象程序设计基础课程
-- 数独游戏，用Qt C++实现（被评为优秀大作业）：[代码](https://github.com/Trinkle23897/sudoku-qt5)
-- C/S结构的在线国际跳棋游戏，用Qt C++实现：[代码](https://github.com/Trinkle23897/draughts-qt5)
-- 基于Android的简易新闻阅读器：[代码](https://github.com/Trinkle23897/simple-news-android-app) - Java课程大作业
-- 维基百科人物信息检索系统，用Python（Django）实现：[代码](https://github.com/Trinkle23897/list_of_people)
+- Realistic Image Rendering (implement Path Tracing algorithm, Progressive Photon Mapping (PPM) algorithm, Stochastic Progressive Photon Mapping (SPPM)algorithm, render 3D models with Bezier surface) : [Code](https://github.com/Trinkle23897/Computational-Graphics-THU-2018) - project for Computational Graphics course
+- Super fast escape routing algorithm for multi-point pairs: [Demonstration](https://trinkle23897.github.io/demo.html) - project for fundamental OOP course
+- Android-based simple news reader: [Code](https://github.com/Trinkle23897/simple-news-android-app) - Java Program Design and Training course
+- Sudoku game, in Qt C++ (rated as excellent homework): [Code](https://github.com/Trinkle23897/sudoku-qt5)
+- C/S Draughts game online, in Qt C++: [Code](https://github.com/Trinkle23897/draughts-qt5)
+- Wikipedia Character Information Retrieval System, in Python with Django: [Code](https://github.com/Trinkle23897/list_of_people)
 
 
-### 实习项目
+### Internship Project
 
-#### 快速多帧降噪 - AI-based ISP Pipeline
+#### Fast Multi-frame Noise Reduction - AI-based ISP Pipeline
 
-在暗光、逆光等场景下，摄影设备采集的图像经过传统的图像处理模块(ISP Pipeline)之后会产生十分明显的颗粒噪点，对画质产生不良影响，甚至会降低后端神经网络处理任务的性能：比如在安防领域，夜晚场景下视频监控中的噪点会极大地降低人脸识别的准确度。因此图像降噪对于ISP而言是十分重要的一环。
+In scenes of dark light and backlighting, image captured by photographic equipment will produce very obvious particle noise after passing through the traditional image processing pipeline (ISP Pipeline), which will adversely affect the image quality and even reduce the performance of the back-end neural network. For example, in video surveillance, noise in night scenes can greatly reduce the accuracy of face recognition. Therefore, image noise reduction is a very important part of ISP.
 
-之前的文献提出了一些使用神经网络进行空域降噪的方法，效果要明显优于传统降噪方法（e.g. NLM, BM3D, VBM4D），但是由于速度原因，如视频监控要求对于**全分辨率图像**至少30fps的处理速度，无法直接应用到工业界。
+Previous papers have proposed some methods for spatial noise reduction using neural networks, which are significantly better than traditional noise reduction methods (e.g. NLM, BM3D, VBM4D), but due to speed reasons, such as video surveillance requires at least 30fps for **full resolution images** processing speed, it cannot be directly applied to the industry.
 
-我设计了一个基于时域+空域的降噪网络，用8张连续拍摄的12M像素级别的图片（e.g. 4032*3024）作为输入，能在GTX1060上~70ms的时间内得出降噪结果，速度要远远快于之前的所有方法，并且降噪质量要明显优于只使用空域降噪的一些方法。由于实习协议，代码尚未公开。
+I designed a temporal & spatial domain based noise reduction network. Using 8 consecutive 12M pixel images (e.g. 4032*3024) as input, it can get the noise reduction result in the ~70ms time on one GTX1060. It is much faster than all previous methods, and the quality of noise reduction is significantly better than some methods that only use spatial noise reduction. Due to the internship agreement, the code has not been made public.
 
-## 实习
+## Internship
 
-- 2018.3 - 2018.7  北京市商汤科技开发有限公司，前端交互计算部门，见习研究员，[公司网站](https://www.sensetime.com/)
+- 2018.3 - 2018.7  SenseTime Inc., Department of Front-end Interactive Computing, Trainee Researcher, [Company Website](https://www.sensetime.com/)
 
-## 命题
+## Problem-Setting
 
-我参与过若干场次信息学比赛的命题，包括中国国家队集训（CTT）、清华大学优秀高中生信息学夏季体验营（THUSC）以及清华大学程序设计竞赛暨高校邀请赛（THUPC）等比赛。
+I have participated in problem-setting in several competitions of informatics, including Chinese Team Training (CTT), Tsinghua University Informatics Summer Camp for Excellent High School Student(THUSC), Tsinghua University Programming Competition and College Invitational Tournament (THUPC), etc.
 
-| 比赛       | 名称           | 链接                                |
+| Contest | Task       | Link                            |
 | ---------- | -------------- | ----------------------------------- |
-| THUPC 2018   | 赛艇   | [题目](https://loj.ac/problem/6388) |
-| THUPC 2018   | 密码学第三次小作业   | [题目](https://loj.ac/problem/6392) |
-| CTT 2017   | 简单数据结构   | [题目](https://loj.ac/problem/2326) |
-| THUSCU 2016 | 工资         | [题目仓库](https://git.thusaac.org/publish/THUSCU2017/tree/master/day1/wage) |
-| THUSC 2016 | 杜老师         | 尚未公开 |
-| THUSC 2016 | 宇宙广播       | 尚未公开 |
-| CTT 2016   | 如何优雅地求和 | [题目](http://uoj.ac/problem/269)   |
+| THUPC 2018   | Rowing | [Statement (in Chinese)](https://loj.ac/problem/6388) |
+| THUPC 2018   | Third Cryptography Assignment | [Statement (in Chinese)](https://loj.ac/problem/6392) |
+| CTT 2017   | Simple Data Structure | [Statement (in Chinese)](https://loj.ac/problem/2326) |
+| THUSCU 2016 | Wage     | [Statement (in Chinese)](https://git.thusaac.org/publish/THUSCU2017/tree/master/day1/wage) |
+| THUSC 2016 | Professor Du | Not yet public |
+| THUSC 2016 | Cosmic Broadcast | Not yet public |
+| CTT 2016   | How to Elegantly Sum Up | [Statement (in Chinese)](http://uoj.ac/problem/269) |
 
+## Others
 
-## 其他
+- Familiar with C, C++, Python
+- Know Java, JavaScript, MATLAB, LaTeX
+- CET-4: 575
 
-- 熟悉C、C++、Python
-- 了解Java、JavaScript、MATLAB、LaTeX
-- 英语四级：575
-
-*上次更新于2018年9月14日*
+*Last update on September 14, 2018*
 
 ------
