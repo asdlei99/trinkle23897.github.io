@@ -43,10 +43,11 @@ ViZDoom 2018 Track 1 是AI单人闯关模式，考核标准是最短时间内闯
 
 ### 课程项目
 
-- 真实感物体渲染（实现了路径追踪(Path Tracing)、渐进式光子映射(PPM)、随机渐进式光子映射(SPPM)等算法，渲染包含Bezier曲面的三维模型，被评为优秀大作业）：[代码](https://github.com/Trinkle23897/Computational-Graphics-THU-2018) – 计算机图形学课程
-- 用一个自己设计的算法实现的多点对的逃逸布线路径寻找算法：[演示](https://trinkle23897.github.io/demo.html) – 面向对象程序设计基础课程
+- 真实感物体渲染（实现了路径追踪(Path Tracing)、渐进式光子映射(PPM)、随机渐进式光子映射(SPPM)等算法，渲染包含Bezier曲面的三维模型，被评为优秀大作业）：[代码](https://github.com/Trinkle23897/Computational-Graphics-THU-2018) - 计算机图形学课程
+- 用一个自己设计的算法实现的多点对的逃逸布线路径寻找算法：[演示](https://trinkle23897.github.io/demo.html) - 面向对象程序设计基础课程
 - 数独游戏，用Qt C++实现（被评为优秀大作业）：[代码](https://github.com/Trinkle23897/sudoku-qt5)
 - C/S结构的在线国际跳棋游戏，用Qt C++实现：[代码](https://github.com/Trinkle23897/draughts-qt5)
+- 基于Android的简易新闻阅读器：[代码](https://github.com/Trinkle23897/simple-news-android-app) - Java课程大作业
 - 维基百科人物信息检索系统，用Python（Django）实现：[代码](https://github.com/Trinkle23897/list_of_people)
 
 
