@@ -23,9 +23,9 @@
 
 ## 文章
 
-我以第一作者身份向某期刊提交了论文，正在被审阅。
+Shihong Song, **Jiayi Weng**, Hang Su, Dong Yan, Jun Zhu   [**Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning**](/cv/viz2018.html)   submitted to AAAI 2019 (under review)
 
-我以共同第一作者身份向某会议提交了论文，正在被审阅。
+**Jiayi Weng**, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, Hailong Yao   [**URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips**](/cv/urber.html)   submitted to TCAD (in minor revision)
 
 ## 竞赛
 
@@ -37,9 +37,7 @@ ViZDoom 2018 Track 1 是AI单人闯关模式，考核标准是最短时间内闯
 
 针对该复杂任务，我们团队提出了环境信息引导的分层强化学习技术，在对环境信息有效感知基础上，融合环境反馈和强化学习的奖励信号，引导分层强化学习训练，使得 AI 闯关表现优异，预赛中以绝对优势保持第一，直至决赛锁定冠军。
 
-[官方比赛结果](http://vizdoom.cs.put.edu.pl/competition-cig-2018/competition-results)
-
-[中文媒体报道](https://www.jiqizhixin.com/articles/2018-08-23-12)
+链接：[官方比赛结果](http://vizdoom.cs.put.edu.pl/competition-cig-2018/competition-results)，[中文媒体报道](https://www.jiqizhixin.com/articles/2018-08-23-12)。
 
 ## 项目
 

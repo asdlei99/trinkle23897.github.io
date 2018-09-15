@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0054)https://people.eecs.berkeley.edu/~bmild/kpn/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110862391-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110862391-2');
+</script>
+
+
+<title>Playing FPS Games With Environment-Aware Hierarchical Reinforcement Learning</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="./proj_files/style.css">
+<link rel="stylesheet" href="./proj_files/font.css">
+
+<style type="text/css">
+  #myvalignContainer1O { position:relative }
+  #myvalignContainer1I { position:absolute; top:50%; height:10em; margin-top:-5em }
+</style><style type="text/css">
+  #myvalignContainer2 { line-height:4em }
+</style></head>
+
+
+
+
+<body>
+
+
+<!-- Title -->
+<div class="container">
+
+<span class="title">Playing FPS Games With Environment-Aware Hierarchical Reinforcement Learning</span>
+
+<table align="center" border="0" width="1000" class="authors">
+  <tbody><tr>
+  <td class="author"> Shihong Song</a><sup>1, #</sup></td>
+  <td class="author"> <a href="/cv/en.html">Jiayi Weng</a><sup>1, #</sup></td>
+  <td class="author"> <a href="https://sites.google.com/site/suhangss/">Hang Su</a><sup>1</sup></td>
+  <td class="author"> Dong Yan<sup>1</sup></td>
+  <td class="author"> <a href="http://ml.cs.tsinghua.edu.cn/~jun/index.shtml">Jun Zhu</a><sup>1</sup></td>
+  </tr></tbody>
+</table>
+
+<table align="center" border="0" width="1000" class="affiliations">
+<tbody>
+  <tr>
+    <td class="affliation" align="center">
+      <sup>1</sup><a href="http://www.tsinghua.edu.cn/publish/thu2018en/index.html">Tsinghua University</a>
+          
+      <sup>#</sup>The authors contributed equally to this work.
+    </td>
+  </tr>
+</tbody>
+</table>
+<br>
+<br>
+<center>
+	<img src="proj_files/viz2018_arch.png" width="1100">
+</center>
+
+<!-- 
+<table align="center"><tbody><tr>
+<td><center><img src="./proj_files/teaser.png" width="1100"></center></td>
+</tr>
+<tr><td>
+<table border="0">
+
+<tbody><tr><td class="caption">A qualitative evaluation of our model on real image bursts from a handheld camera in a low-light environment.
+The reference frame from the input burst (a) is sharp, but noisy.
+Noise can be reduced by simply averaging (b) a burst of similar images, but this can fail in the presence of motion.
+Our approach (f) learns to use the information present in the entire burst to denoise a single frame, producing lower noise and avoiding artifacts compared to baseline techniques (c - e).</td></tr>
+</tbody></table>
+
+ -->
+<!-- Abstract -->
+<div class="section">
+<span class="section-title">Abstract </span>
+<p> First-person-shooter (FPS) games are good platforms for AI as they require fast cognition as well as fast decision making. However, solutions using end-to-end networks lack understanding of environment and ability to deal with complex circumstances. To address these issues, we propose a novel star-shaped hierarchical reinforcement learning model, which works in a manager-worker fashion incorporating environmental signals. Specifically, the manager grasps a fair understanding of environment, encodes the environmental information in a compressive representation and decides which combination of workers' actions will be used for the current step. Workers, disentangled with each other, make decision themselves by utilizing environmental information given by manager. With environmental signals appropriately harnessed, the reasonability of the decision making process is largely enhanced by our proposed hierarchical structures. Extensive experiments on FPS games show our bot significantly outperforms previous bots and won a recent international competition.</p>
+<!-- <p class="bibtex">
+@article{xue17toflow,
+&nbsp; author = {Xue, Tianfan and Chen, Baian and Wu, Jiajun and Wei, Donglai and Freeman, William T},
+&nbsp; title = {Video Enhancement with Task-Oriented Flow},
+&nbsp; journal = {arXiv},
+&nbsp; year = {2017}
+}
+</p> -->
+
+
+</div>
+<!-- 
+<div class="section">
+<span class="section-title">Acknowledgement</span>
+<p>
+The work of H. Yao was supported in part by the National Natural Science Foundation of China (61674093) and Tsinghua University Initiative Scientific Research Program (20141081203).
+</p><p>
+The work of T.-Y. Ho was supported in part by the Ministry of Science and Technology of Taiwan, under Grant MOST 105-2221-E-007-118-MY3 and 104-2220-E-007-021 and in part by the Technical University of Munich-Institute for Advanced Study, funded by the German Excellence Initiative and the European Union Seventh Framework Program under grant agreement no 291763.
+</p>
+</div>
+ -->
+<div class="section">
+<span class="section-title">Result</span>
+<p>
+  <center>
+    <!-- <embed src="./proj_files/urber_runtime.pdf" width="640" height="480"> -->
+    <br/>
+    <img src="proj_files/viz2018_nvcmp.png" width="1100">
+    <br/>
+    <img src="proj_files/viz2018_nvres.png" width="400">
+    <br/>
+    <img src="proj_files/viz2018_res.png" width="600">
+  </center>
+</p>
+</div>
+
+<div class="section">
+<span class="section-title">Video demos</span>
+<!-- <p><a href="/video/demo.zip">Here</a> is a zip file including these videos with high quality.</p> -->
+<center>
+<p>
+  <p><iframe width="896" height="504" src="http://ml.cs.tsinghua.edu.cn/~jiayi/merge.mp4" frameborder="0" allowfullscreen></iframe></p>
+</p>
+<p>
+  <p><iframe width="896" height="504" src="http://ml.cs.tsinghua.edu.cn/~jiayi/output_1024X576.mp4" frameborder="0" allowfullscreen></iframe></p>
+</p>
+</center>
+</div>
+
+</td></tr></tbody></table></div></body></html>
