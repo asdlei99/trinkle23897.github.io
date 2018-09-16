@@ -67,6 +67,11 @@ I designed a temporal & spatial domain based noise reduction network. Using 8 co
 
 - 2018.3 - 2018.7  SenseTime Inc., Department of Front-end Interactive Computing, Trainee Researcher, [Company Website](https://www.sensetime.com/)
 
+## Patent
+
+- Hailong Yao, **Jiayi Weng**, Escape Routing Method, [CN107992666A](https://patents.google.com/patent/CN107992666A/en), 2017-11-28
+- Hailong Yao, Yixin Li, **Jiayi Weng**, Rapid Wiring Method and Device for Large-scale Microfluidic Bipchip, [CN107491598A](https://patents.google.com/patent/CN107491598A/en), 2017-07-28
+
 ## Problem-Setting
 
 I have participated in problem-setting in several competitions of informatics, including Chinese Team Training (CTT), Tsinghua University Informatics Summer Camp for Excellent High School Student(THUSC), Tsinghua University Programming Competition and College Invitational Tournament (THUPC), etc.
