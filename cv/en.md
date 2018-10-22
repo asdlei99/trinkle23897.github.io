@@ -27,7 +27,7 @@ Undergraduate, Department of Computer Science and Technology, Tsinghua Universit
 
 Shihong Song\*, **Jiayi Weng**\*, Hang Su, Dong Yan, Jun Zhu   [**Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning**](/cv/viz2018.html)   submitted to AAAI 2019 (under review)
 
-**Jiayi Weng**, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, Hailong Yao   [**URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips**](/cv/urber.html)   submitted to TCAD (in minor revision)
+**Jiayi Weng**, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, Hailong Yao   [**URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips**](/cv/urber.html)   Accepted by IEEE TCAD
 
 ## Competition
 
