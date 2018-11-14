@@ -20,13 +20,13 @@ layout: post
 
 4. `sudo apt install git htop zsh vim tmux cmake curl axel texlive-full gummi proxychains python-pip python3-pip libopencv-dev libboost-dev gnome-tweak-tool openvpn openssl mpv wine64 xclip enca apache2 php7.2` 并安装oh-my-zsh和.tmux
 
-5. 安装 chrome、typora、sublime、teamviewer、wps-office、sogoupinyin、vmware
+5. `sudo apt remove libreoffice* && sudo apt autoremove`，之后安装 chrome、typora、sublime、teamviewer、wps-office、sogoupinyin、vmware
 
 6. 修改 `~/.pip/pip.conf` 然后 `sudo pip3 install pip torch torchvision opencv-python tensorflow-gpu jupyter matplotlib ipython --upgrade `
 
 7. 装目前最新的nvidia驱动，现在是410，可是ubuntu软件源只有390
 
-8. 下载cuda9.0，选ubuntu17.04版本的并安装
+8. 下载cuda9.0，选ubuntu17.04版本的并安装，g++需要降级到g++-5，`sudo update-alternatives --config gcc`
 
 9. 下载cudnn7.1.4匹配cuda9.0版本的，安装之后在 `~/.zshrc` 中添加
 
@@ -35,7 +35,7 @@ layout: post
    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-9.0/lib64
    ```
 
-10. 关盖子再开起来会花屏，解决方案是 `sudo vim /etc/default/grub` 把 `quiet splash `改成 `text`
+10. 关盖子再开起来会花屏，解决方案是 `sudo vim /etc/default/grub` 把 `quiet splash ` 改成 `text`
 
 11. `sudo vim /usr/local/lib/python3.6/dist-packages/shadowsocks/crypto/openssl.py` 改52和111行改成 `libcrypto.EVP_CIPHER_CTX_reset` 不然ss起不起来
 
@@ -44,3 +44,4 @@ layout: post
 ### 效果图
 
 ![](/images/htop.png)
+
