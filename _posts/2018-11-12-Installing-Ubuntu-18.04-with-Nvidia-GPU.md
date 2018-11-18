@@ -18,11 +18,27 @@ layout: post
 
 3. `sudo apt update && sudo apt upgrade`
 
-4. `sudo apt install git htop zsh vim tmux cmake curl axel texlive-full gummi proxychains python-pip python3-pip libopencv-dev libboost-dev gnome-tweak-tool openvpn openssl mpv wine64 xclip enca apache2 php7.2` 并安装oh-my-zsh和.tmux
+4. `sudo apt install git htop zsh vim tmux cmake curl axel texlive-full gummi proxychains python-pip python3-pip libopencv-dev libboost-dev gnome-tweak-tool openvpn openssl mpv wine64 xclip enca apache2 php7.2 unrar` 并安装oh-my-zsh 和.tmux
+
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cd
+git clone https://github.com/gpakosz/.tmux.git
+ln -s -f .tmux/.tmux.conf
+cp .tmux/.tmux.conf.local .
+```
 
 5. `sudo apt remove libreoffice* && sudo apt autoremove`，之后安装 chrome、typora、sublime、teamviewer、wps-office、sogoupinyin、vmware
 
 6. 修改 `~/.pip/pip.conf` 然后 `sudo pip3 install pip torch torchvision opencv-python tensorflow-gpu jupyter matplotlib ipython --upgrade `
+
+7. 同时安装macbuntu
+
+```bash
+sudo add-apt-repository ppa:noobslab/macbuntu
+sudo apt-get update
+sudo apt-get install macbuntu-os-icons-v1804 macbuntu-os-ithemes-v1804
+```
 
 7. 装目前最新的nvidia驱动，现在是410，可是ubuntu软件源只有390
 
