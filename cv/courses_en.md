@@ -19,12 +19,14 @@ I have complete 119 credits of courses (out of 170 required for graduation). The
 | Experiment of Fundamentals electronics | A-   | 3.7  | 1    |
 | Network security engineering and practice | A-   | 3.7  | 2    |
 | Digital Logic Experimentation |   A-   |   3.7   |   1   |
+| Java Program Design and Training |   A-   |   3.7   |   2   |
 | Discrete Mathematics(1) | B+   | 3.3  | 3    |
 | Discrete Mathematics(2) | B+   | 3.3  | 3    |
 | Introduction to Artificial Intelligence | B+   | 3.3  | 2    |
 | Digital Logic Circuit | B+ | 3.3 | 3 |
 | Digital Image Processing | B+ | 3.3 | 2 |
 | Formal Languages and Automata | B+ | 3.3 | 2 |
+| Assembly Language Programming | B+ | 3.3 | 3 |
 
 
 I also got good grades in these courses:
@@ -58,6 +60,6 @@ Tsinghua way of GPA calculation:
 | D     | 62-60  | 1.0   |
 | F     | ≤59    | 0.0   |
 
-*Last updated on September 14, 2018*
+*Last updated on December 11th, 2018*
 
 ------

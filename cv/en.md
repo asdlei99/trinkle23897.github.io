@@ -15,7 +15,8 @@ Undergraduate, Department of Computer Science and Technology, Tsinghua Universit
 
 | Year | Event                                                        | Link                                                         |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 2017 | Friend of Tsinghua, Guangzhou Pharmaceutical Holdings Limited Scholarship |                                                              |
+| 2018 | Friend of Tsinghua, Suzhou Industrial Park Scholarship (Comprehensive Excellence Award) |                                                              |
+| 2017 | Friend of Tsinghua, Guangzhou Pharmaceutical Holdings Limited Scholarship (Academic Excellence Award, Science and Technology Innovation Award) |                                                              |
 | 2017 | 11th CCF Computer Software Certification, Passed with highest score | [Transcript (in Chinese)](/pdf/csptranscript.pdf)            |
 | 2016 | 18th annual Electronic Design Competition in Tsinghua University, Third prize |                                                              |
 | 2015 | 32nd National Olympiad in Informatics (NOI2015), Third prize (bronze medal) | [Winners (in Chinese)](http://history.ccf.org.cn/resources/2567814757332/news/NOI2015%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%952015-12-25-10_52_58.htm) |
@@ -25,9 +26,9 @@ Undergraduate, Department of Computer Science and Technology, Tsinghua Universit
 
 ## Publication
 
-Shihong Song\*, **Jiayi Weng**\*, Hang Su, Dong Yan, Jun Zhu   [**Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning**](/cv/viz2018.html)   submitted to AAAI 2019 (under review)
+Jiayi Weng, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, and Hailong Yao. [**URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips**](/cv/urber.html). IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2018.
 
-**Jiayi Weng**, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, Hailong Yao   [**URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips**](/cv/urber.html)   Accepted by IEEE TCAD
+Shihong Song\*, **Jiayi Weng**\*, Hang Su, Dong Yan, Jun Zhu   [**Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning**](/cv/viz2018.html)   (under review)
 
 ## Competition
 
@@ -90,8 +91,8 @@ I have participated in problem-setting in several competitions of informatics, i
 
 - Familiar with C, C++, Python
 - Know Java, JavaScript, MATLAB, LaTeX
-- CET-4: 575
+- TOEFL: 92; CET-4: 575
 
-*Last update on September 14, 2018*
+*Last update on December 11th, 2018*
 
 ------

@@ -2,44 +2,50 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>翁家翌</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
+<title>zh</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
-.in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export p { white-space: pre-wrap; }
 @media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
   .CodeMirror-gutters { display: none !important; }
 }
-.typora-export #write { margin: 0px auto; }
-#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
-#write li > table:first-child { margin-top: -20px; }
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; }
-input, button, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
-::before, ::after, * { box-sizing: border-box; }
-#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
-#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
 h3 { font-size: 1.6rem; }
 h4 { font-size: 1.4rem; }
 h5 { font-size: 1.2rem; }
 h6 { font-size: 1rem; }
-p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
-.typora-export p { white-space: normal; }
-.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
 .hidden { display: none; }
-.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; }
-#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
-#write > figure:first-child { margin-top: 16px; }
-figure { overflow-x: auto; margin: -8px 0px 0px -8px; max-width: calc(100% + 16px); padding: 8px; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
@@ -50,57 +56,58 @@ table.md-table td { min-width: 80px; }
 .CodeMirror pre { padding: 0px 4px; }
 .CodeMirror-lines { padding: 0px; }
 div.hr:focus { cursor: none; }
-pre { white-space: pre-wrap; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
 .md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
-.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
-.md-fences.mock-cm { white-space: pre-wrap; }
-.show-fences-line-number .md-fences { padding-left: 0px; }
-.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
-.CodeMirror-line { break-inside: avoid; }
-.footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
-.footnotes + .footnotes { margin-top: -1em; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
-li p, li .mathjax-block { margin: 0.5rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
 li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
-blockquote > :first-child { margin-top: 0px; }
-.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
 @media print {
-  html, body { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
-  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
-  p { orphans: 4; }
   html.blink-to-pdf { font-size: 13px; }
   .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
   .typora-export #write::after { height: 0px; }
-  @page { margin: 20mm 0mm; }
+  @page { margin: 20mm 0px; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
 p > img:only-child { display: block; margin: auto; }
-p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
-.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
-p + .mathjax-block { margin-top: -1.143rem; }
-.mathjax-block:not(:empty)::after { display: none; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
-.task-list { list-style-type: none; }
-.task-list-item { position: relative; padding-left: 1em; }
-.task-list-item input { position: absolute; top: 0px; left: 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
-.md-toc::after, .md-toc-content::after { display: none; }
+.md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
 .md-toc-item a { text-decoration: none; }
-.md-toc-inner:hover { }
+.md-toc-inner:hover { text-decoration: underline; }
 .md-toc-inner { display: inline-block; cursor: pointer; }
-.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
 .md-toc-h2 .md-toc-inner { margin-left: 2em; }
 .md-toc-h3 .md-toc-inner { margin-left: 4em; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
@@ -116,22 +123,27 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .footnote-line a:not(.reversefootnote) { color: inherit; }
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
-.md-tag { opacity: 0.5; }
-pre, code, tt { font-family: var(--monospace); }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
-code { text-align: left; }
-h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
-a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background: transparent !important; text-decoration: initial !important; text-shadow: initial !important; }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
-.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
 .MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
-[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
 table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
 
 
 :root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
@@ -141,10 +153,8 @@ table tr th { border-bottom: 0px; }
 @font-face { font-family: "Open Sans"; font-style: italic; font-weight: bold; src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff"); }
 html { font-size: 16px; }
 body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
-#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
 #write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
-body > :first-child { margin-top: 0px !important; }
-body > :last-child { margin-bottom: 0px !important; }
 a { color: rgb(65, 131, 196); }
 h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
 h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
@@ -162,34 +172,26 @@ h5 { font-size: 1em; }
 h6 { font-size: 1em; color: rgb(119, 119, 119); }
 p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
 li > ol, li > ul { margin: 0px; }
-hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border-width: 0px 0px 1px; border-style: none none solid; border-top-color: initial; border-right-color: initial; border-left-color: initial; border-image: initial; overflow: hidden; box-sizing: content-box; border-bottom-color: rgb(221, 221, 221); }
-body > h2:first-child { margin-top: 0px; padding-top: 0px; }
-body > h1:first-child { margin-top: 0px; padding-top: 0px; }
-body > h1:first-child + h2 { margin-top: 0px; padding-top: 0px; }
-body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 { margin-top: 0px; padding-top: 0px; }
-h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
 li p.first { display: inline-block; }
 ul, ol { padding-left: 30px; }
 ul:first-child, ol:first-child { margin-top: 0px; }
 ul:last-child, ol:last-child { margin-bottom: 0px; }
-blockquote { border-left: 4px solid rgb(221, 221, 221); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
 blockquote blockquote { padding-right: 0px; }
 table { padding: 0px; word-break: initial; }
-table tr { border-top: 1px solid rgb(204, 204, 204); margin: 0px; padding: 0px; }
-table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
-table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
-table tr td { border: 1px solid rgb(204, 204, 204); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
 table tr th:first-child, table tr td:first-child { margin-top: 0px; }
 table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
-.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); }
-.md-fences, code, tt { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 4px 0px; font-size: 0.9em; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 4px 2px; }
 .md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
-.task-list { padding-left: 0px; }
-.task-list-item { padding-left: 32px; }
-.task-list-item input { top: 3px; left: 8px; }
-@media screen and (min-width: 914px) {
-}
+.md-task-list-item > input { margin-left: -1.3em; }
 @media print {
   html { font-size: 13px; }
   table, pre { break-inside: avoid; }
@@ -198,31 +200,34 @@ table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
 .md-fences { background-color: rgb(248, 248, 248); }
 #write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
 .mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
 #write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
 #write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
 #write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
 #write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
-.md-image > .md-meta { border: 1px solid rgb(221, 221, 221); border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 4px 0px; font-size: 0.9em; color: inherit; }
-.md-tag { color: inherit; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
 .md-toc { margin-top: 20px; padding-bottom: 20px; }
 .sidebar-tabs { border-bottom: none; }
 #typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
 #typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
-#md-notification::before { top: 10px; }
 .on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
 header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
 .file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
 .mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
 .md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
 
 
 
 
 
-
+ .typora-export p, .typora-export .footnote-line {white-space: normal;} 
 </style>
 </head>
 <body class='typora-export' >
-    <div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>翁家翌（Jiayi Weng）</h1><p><a href='/cv/en.html'>英文版本 / English version</a></p><p>清华大学计算机系，本科生</p><p><a href='mailto:wengjy16@mails.tsinghua.edu.cn'>wengjy16@mails.tsinghua.edu.cn</a></p><h2><a name='header-n8' class='md-header-anchor '></a>教育</h2><ul><li><strong>2016 -</strong>，清华大学计算机科学与技术系，本科生；GPA：3.50/4.00（排名15%），<a href='/cv/courses_zh.html'>详细</a></li><li><strong>2013 - 2016</strong>，福建省福州第一中学</li></ul><h2><a name='header-n16' class='md-header-anchor '></a>个人奖项</h2><figure><table><thead><tr><th>年份</th><th>奖项</th><th>链接</th></tr></thead><tbody><tr><td>2017</td><td>清华之友——广药集团奖学金</td><td>&nbsp;</td></tr><tr><td>2017</td><td>第11次CCF软件能力认证（CSP认证），470/500（全国最高分）</td><td><a href='/pdf/csptranscript.pdf'>成绩单</a></td></tr><tr><td>2016</td><td>清华大学第18届电子设计大赛，三等奖</td><td>&nbsp;</td></tr><tr><td>2015</td><td>第32届全国青少年信息学奥林匹克竞赛（NOI2015），三等奖（铜牌）</td><td><a href='http://history.ccf.org.cn/resources/2567814757332/news/NOI2015%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%952015-12-25-10_52_58.htm'>获奖名单</a></td></tr><tr><td>2015</td><td>第27届国际信息学奥林匹克中国队选拔赛暨全国信息学奥林匹克精英赛（CTSC2015），银牌</td><td><a href='http://www.noi.cn/noi-news/huojiang/666-ccf-ctsc2015'>获奖名单</a></td></tr><tr><td>2015</td><td>第九届亚洲和太平洋地区信息学奥林匹克中国赛区（APIO2015），银牌</td><td><a href='http://www.noi.cn/noi-news/huojiang/667-apio2015'>获奖名单</a></td></tr><tr><td>2015</td><td>2015 年全国青少年信息学奥林匹克冬令营（WC2015），二等奖</td><td><a href='http://download.noi.cn/T/2015/NOI2015dly.htm'>获奖名单</a></td></tr></tbody></table></figure><h2><a name='header-n50' class='md-header-anchor '></a>文章</h2><p>Shihong Song*, <strong>Jiayi Weng</strong>*, Hang Su, Dong Yan, Jun Zhu   <a href='/cv/viz2018.html'><strong>Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning</strong></a>   submitted to AAAI 2019 (under review)</p><p><strong>Jiayi Weng</strong>, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, Hailong Yao   <a href='/cv/urber.html'><strong>URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips</strong></a>   Accepted by IEEE TCAD</p><h2><a name='header-n55' class='md-header-anchor '></a>竞赛</h2><h3><a name='header-n56' class='md-header-anchor '></a>Visual Doom AI Competition at <a href='https://project.dke.maastrichtuniversity.nl/cig2018/'>CIG2018</a> Singleplayer Track (1), Winner</h3><p>《毁灭战士 Doom》是1993 年推出的 FPS（First Person Shooter，第一人称射击）类游戏，该游戏是 AI 研究热门试验场。2016 年，基于游戏的 ViZDoom AI 竞赛诞生，研究能获取原始视觉信息的强化学习技术，因其高挑战性吸引众多顶级实验室，如 2016 年冠军 Facebook FAIR（Track 1）和英特尔（Track 2）、2017 年冠军 Marvin（Track 1）和卡耐基梅隆大学（Track 2）。</p><p>ViZDoom 2018 Track 1 是AI单人闯关模式，考核标准是最短时间内闯最多的关口。与以往经典的死亡竞赛不同，需要 AI 能同时完成探索路径、收集装备、躲避陷阱、杀死怪物、寻找出口等诸多复杂任务，对 AI 的任务理解和环境认知能力要求极高。在 53 个国际参赛团提交的 204 个机器人中，只有 6 个团队实现了有意义的闯关。</p><p>针对该复杂任务，我们团队提出了环境信息引导的分层强化学习技术，在对环境信息有效感知基础上，融合环境反馈和强化学习的奖励信号，引导分层强化学习训练，使得 AI 闯关表现优异，预赛中以绝对优势保持第一，直至决赛锁定冠军。</p><p>链接：<a href='http://vizdoom.cs.put.edu.pl/competition-cig-2018/competition-results'>官方比赛结果</a>，<a href='https://www.jiqizhixin.com/articles/2018-08-23-12'>中文媒体报道</a>。</p><h2><a name='header-n65' class='md-header-anchor '></a>项目</h2><h3><a name='header-n66' class='md-header-anchor '></a>课程项目</h3><ul><li>真实感物体渲染（实现了路径追踪(Path Tracing)、渐进式光子映射(PPM)、随机渐进式光子映射(SPPM)等算法，渲染包含Bezier曲面的三维模型，被评为优秀大作业）：<a href='https://github.com/Trinkle23897/Computational-Graphics-THU-2018'>代码</a> - 计算机图形学课程</li><li>用一个自己设计的算法实现的多点对的逃逸布线路径寻找算法：<a href='https://trinkle23897.github.io/demo.html'>演示</a> - 面向对象程序设计基础课程</li><li>数独游戏，用Qt C++实现（被评为优秀大作业）：<a href='https://github.com/Trinkle23897/sudoku-qt5'>代码</a></li><li>C/S结构的在线国际跳棋游戏，用Qt C++实现：<a href='https://github.com/Trinkle23897/draughts-qt5'>代码</a></li><li>基于Android的简易新闻阅读器：<a href='https://github.com/Trinkle23897/simple-news-android-app'>代码</a> - Java课程大作业</li><li>维基百科人物信息检索系统，用Python（Django）实现：<a href='https://github.com/Trinkle23897/list_of_people'>代码</a></li></ul><h3><a name='header-n86' class='md-header-anchor '></a>实习项目</h3><h4><a name='header-n87' class='md-header-anchor '></a>快速多帧降噪 - AI-based ISP Pipeline</h4><p>在暗光、逆光等场景下，摄影设备采集的图像经过传统的图像处理模块(ISP Pipeline)之后会产生十分明显的颗粒噪点，对画质产生不良影响，甚至会降低后端神经网络处理任务的性能：比如在安防领域，夜晚场景下视频监控中的噪点会极大地降低人脸识别的准确度。因此图像降噪对于ISP而言是十分重要的一环。</p><p>之前的文献提出了一些使用神经网络进行空域降噪的方法，效果要明显优于传统降噪方法（e.g. NLM, BM3D, VBM4D），但是由于速度原因，如视频监控要求对于<strong>全分辨率图像</strong>至少30fps的处理速度，无法直接应用到工业界。</p><p>我设计了一个基于时域+空域的降噪网络，用8张连续拍摄的12M像素级别的图片（e.g. 4032*3024）作为输入，能在GTX1060上~70ms的时间内得出降噪结果，速度要远远快于之前的所有方法，并且降噪质量要明显优于只使用空域降噪的一些方法。由于实习协议，代码尚未公开。</p><h2><a name='header-n94' class='md-header-anchor '></a>实习</h2><ul><li>2018.3 - 2018.7  北京市商汤科技开发有限公司，前端交互计算部门，见习研究员，<a href='https://www.sensetime.com/'>公司网站</a></li></ul><h2><a name='header-n99' class='md-header-anchor '></a>专利</h2><ul><li>姚海龙，<strong>翁家翌</strong>，《一种逃逸布线方法》，<a href='https://patents.google.com/patent/CN107992666A/zh'>CN107992666A</a>，2017-11-28</li><li>姚海龙，李奕昕，<strong>翁家翌</strong>，《大规模微流控生物芯片快速布线方法及设备》，<a href='https://patents.google.com/patent/CN107491598A/zh'>CN107491598A</a>，2017-07-28</li></ul><h2><a name='header-n150' class='md-header-anchor '></a>命题</h2><p>我参与过若干场次信息学比赛的命题，包括中国国家队集训（CTT）、清华大学优秀高中生信息学夏季体验营（THUSC）以及清华大学程序设计竞赛暨高校邀请赛（THUPC）等比赛。</p><figure><table><thead><tr><th>比赛</th><th>名称</th><th>链接</th></tr></thead><tbody><tr><td>THUPC 2018</td><td>赛艇</td><td><a href='https://loj.ac/problem/6388'>题目</a></td></tr><tr><td>THUPC 2018</td><td>密码学第三次小作业</td><td><a href='https://loj.ac/problem/6392'>题目</a></td></tr><tr><td>CTT 2017</td><td>简单数据结构</td><td><a href='https://loj.ac/problem/2326'>题目</a></td></tr><tr><td>THUSCU 2016</td><td>工资</td><td><a href='https://git.thusaac.org/publish/THUSCU2017/tree/master/day1/wage'>题目仓库</a></td></tr><tr><td>THUSC 2016</td><td>杜老师</td><td>尚未公开</td></tr><tr><td>THUSC 2016</td><td>宇宙广播</td><td>尚未公开</td></tr><tr><td>CTT 2016</td><td>如何优雅地求和</td><td><a href='http://uoj.ac/problem/269'>题目</a></td></tr></tbody></table></figure><h2><a name='header-n136' class='md-header-anchor '></a>其他</h2><ul><li>熟悉C、C++、Python</li><li>了解Java、JavaScript、MATLAB、LaTeX</li><li>英语四级：575</li></ul><p><em>上次更新于2018年9月14日</em></p><hr /></div>
+<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>翁家翌（Jiayi Weng）</h1><p><a href='/cv/en.html'>英文版本 / English version</a></p><p>清华大学计算机系，本科生</p><p><a href='mailto:wengjy16@mails.tsinghua.edu.cn'>wengjy16@mails.tsinghua.edu.cn</a></p><h2><a name='header-n5' class='md-header-anchor '></a>教育</h2><ul><li><strong>2016 -</strong>，清华大学计算机科学与技术系，本科生；GPA：3.50/4.00（排名15%），<a href='/cv/courses_zh.html'>详细</a></li><li><strong>2013 - 2016</strong>，福建省福州第一中学</li></ul><h2><a name='header-n11' class='md-header-anchor '></a>个人奖项</h2><figure><table><thead><tr><th>年份</th><th>奖项</th><th>链接</th></tr></thead><tbody><tr><td>2018</td><td>清华之友——苏州工业园区奖学金（综合优秀奖）</td><td>&nbsp;</td></tr><tr><td>2017</td><td>清华之友——广药集团奖学金（学业优秀奖、科技创新奖）</td><td>&nbsp;</td></tr><tr><td>2017</td><td>第11次CCF软件能力认证（CSP认证），470/500（全国最高分）</td><td><a href='/pdf/csptranscript.pdf'>成绩单</a></td></tr><tr><td>2016</td><td>清华大学第18届电子设计大赛，三等奖</td><td>&nbsp;</td></tr><tr><td>2015</td><td>第32届全国青少年信息学奥林匹克竞赛（NOI2015），三等奖（铜牌）</td><td><a href='http://history.ccf.org.cn/resources/2567814757332/news/NOI2015%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%952015-12-25-10_52_58.htm'>获奖名单</a></td></tr><tr><td>2015</td><td>第27届国际信息学奥林匹克中国队选拔赛暨全国信息学奥林匹克精英赛（CTSC2015），银牌</td><td><a href='http://www.noi.cn/noi-news/huojiang/666-ccf-ctsc2015'>获奖名单</a></td></tr><tr><td>2015</td><td>第九届亚洲和太平洋地区信息学奥林匹克中国赛区（APIO2015），银牌</td><td><a href='http://www.noi.cn/noi-news/huojiang/667-apio2015'>获奖名单</a></td></tr><tr><td>2015</td><td>2015 年全国青少年信息学奥林匹克冬令营（WC2015），二等奖</td><td><a href='http://download.noi.cn/T/2015/NOI2015dly.htm'>获奖名单</a></td></tr></tbody></table></figure><h2><a name='header-n49' class='md-header-anchor '></a>文章</h2><p>Jiayi Weng, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, and Hailong Yao. <a href='/cv/urber.html'><strong>URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips</strong></a>. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2018.</p><p>Shihong Song*, <strong>Jiayi Weng</strong>*, Hang Su, Dong Yan, Jun Zhu   <a href='/cv/viz2018.html'><strong>Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning</strong></a>   (under review)</p><h2><a name='header-n52' class='md-header-anchor '></a>竞赛</h2><h3><a name='header-n53' class='md-header-anchor '></a>Visual Doom AI Competition at <a href='https://project.dke.maastrichtuniversity.nl/cig2018/'>CIG2018</a> Singleplayer Track (1), Winner</h3><p>《毁灭战士 Doom》是1993 年推出的 FPS（First Person Shooter，第一人称射击）类游戏，该游戏是 AI 研究热门试验场。2016 年，基于游戏的 ViZDoom AI 竞赛诞生，研究能获取原始视觉信息的强化学习技术，因其高挑战性吸引众多顶级实验室，如 2016 年冠军 Facebook FAIR（Track 1）和英特尔（Track 2）、2017 年冠军 Marvin（Track 1）和卡耐基梅隆大学（Track 2）。</p><p>ViZDoom 2018 Track 1 是AI单人闯关模式，考核标准是最短时间内闯最多的关口。与以往经典的死亡竞赛不同，需要 AI 能同时完成探索路径、收集装备、躲避陷阱、杀死怪物、寻找出口等诸多复杂任务，对 AI 的任务理解和环境认知能力要求极高。在 53 个国际参赛团提交的 204 个机器人中，只有 6 个团队实现了有意义的闯关。</p><p>针对该复杂任务，我们团队提出了环境信息引导的分层强化学习技术，在对环境信息有效感知基础上，融合环境反馈和强化学习的奖励信号，引导分层强化学习训练，使得 AI 闯关表现优异，预赛中以绝对优势保持第一，直至决赛锁定冠军。</p><p>链接：<a href='http://vizdoom.cs.put.edu.pl/competition-cig-2018/competition-results'>官方比赛结果</a>，<a href='https://www.jiqizhixin.com/articles/2018-08-23-12'>中文媒体报道</a>。</p><h2><a name='header-n58' class='md-header-anchor '></a>项目</h2><h3><a name='header-n59' class='md-header-anchor '></a>课程项目</h3><ul><li>真实感物体渲染（实现了路径追踪(Path Tracing)、渐进式光子映射(PPM)、随机渐进式光子映射(SPPM)等算法，渲染包含Bezier曲面的三维模型，被评为优秀大作业）：<a href='https://github.com/Trinkle23897/Computational-Graphics-THU-2018'>代码</a> - 计算机图形学课程</li><li>用一个自己设计的算法实现的多点对的逃逸布线路径寻找算法：<a href='https://trinkle23897.github.io/demo.html'>演示</a> - 面向对象程序设计基础课程</li><li>数独游戏，用Qt C++实现（被评为优秀大作业）：<a href='https://github.com/Trinkle23897/sudoku-qt5'>代码</a></li><li>C/S结构的在线国际跳棋游戏，用Qt C++实现：<a href='https://github.com/Trinkle23897/draughts-qt5'>代码</a></li><li>基于Android的简易新闻阅读器：<a href='https://github.com/Trinkle23897/simple-news-android-app'>代码</a> - Java课程大作业</li><li>维基百科人物信息检索系统，用Python（Django）实现：<a href='https://github.com/Trinkle23897/list_of_people'>代码</a></li></ul><h3><a name='header-n74' class='md-header-anchor '></a>实习项目</h3><h4><a name='header-n75' class='md-header-anchor '></a>快速多帧降噪 - AI-based ISP Pipeline</h4><p>在暗光、逆光等场景下，摄影设备采集的图像经过传统的图像处理模块(ISP Pipeline)之后会产生十分明显的颗粒噪点，对画质产生不良影响，甚至会降低后端神经网络处理任务的性能：比如在安防领域，夜晚场景下视频监控中的噪点会极大地降低人脸识别的准确度。因此图像降噪对于ISP而言是十分重要的一环。</p><p>之前的文献提出了一些使用神经网络进行空域降噪的方法，效果要明显优于传统降噪方法（e.g. NLM, BM3D, VBM4D），但是由于速度原因，如视频监控要求对于<strong>全分辨率图像</strong>至少30fps的处理速度，无法直接应用到工业界。</p><p>我设计了一个基于时域+空域的降噪网络，用8张连续拍摄的12M像素级别的图片（e.g. 4032*3024）作为输入，能在GTX1060上~70ms的时间内得出降噪结果，速度要远远快于之前的所有方法，并且降噪质量要明显优于只使用空域降噪的一些方法。由于实习协议，代码尚未公开。</p><h2><a name='header-n79' class='md-header-anchor '></a>实习</h2><ul><li>2018.3 - 2018.7  北京市商汤科技开发有限公司，前端交互计算部门，见习研究员，<a href='https://www.sensetime.com/'>公司网站</a></li></ul><h2><a name='header-n83' class='md-header-anchor '></a>专利</h2><ul><li>姚海龙，<strong>翁家翌</strong>，《一种逃逸布线方法》，<a href='https://patents.google.com/patent/CN107992666A/zh'>CN107992666A</a>，2017-11-28</li><li>姚海龙，李奕昕，<strong>翁家翌</strong>，《大规模微流控生物芯片快速布线方法及设备》，<a href='https://patents.google.com/patent/CN107491598A/zh'>CN107491598A</a>，2017-07-28</li></ul><h2><a name='header-n89' class='md-header-anchor '></a>命题</h2><p>我参与过若干场次信息学比赛的命题，包括中国国家队集训（CTT）、清华大学优秀高中生信息学夏季体验营（THUSC）以及清华大学程序设计竞赛暨高校邀请赛（THUPC）等比赛。</p><figure><table><thead><tr><th>比赛</th><th>名称</th><th>链接</th></tr></thead><tbody><tr><td>THUPC 2018</td><td>赛艇</td><td><a href='https://loj.ac/problem/6388'>题目</a></td></tr><tr><td>THUPC 2018</td><td>密码学第三次小作业</td><td><a href='https://loj.ac/problem/6392'>题目</a></td></tr><tr><td>CTT 2017</td><td>简单数据结构</td><td><a href='https://loj.ac/problem/2326'>题目</a></td></tr><tr><td>THUSCU 2016</td><td>工资</td><td><a href='https://git.thusaac.org/publish/THUSCU2017/tree/master/day1/wage'>题目仓库</a></td></tr><tr><td>THUSC 2016</td><td>杜老师</td><td>尚未公开</td></tr><tr><td>THUSC 2016</td><td>宇宙广播</td><td>尚未公开</td></tr><tr><td>CTT 2016</td><td>如何优雅地求和</td><td><a href='http://uoj.ac/problem/269'>题目</a></td></tr></tbody></table></figure><h2><a name='header-n125' class='md-header-anchor '></a>其他</h2><ul><li>熟悉C、C++、Python</li><li>了解Java、JavaScript、MATLAB、LaTeX</li><li>TOFEL：92；英语四级：575</li></ul><p><em>上次更新于2018年12月11日</em></p><hr /></div>
 </body>
 </html>

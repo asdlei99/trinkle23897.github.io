@@ -15,7 +15,8 @@
 
 | 年份 | 奖项                                                         | 链接                                                         |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 2017 | 清华之友——广药集团奖学金                                     |                                                              |
+| 2018 | 清华之友——苏州工业园区奖学金（综合优秀奖）                   |                                                              |
+| 2017 | 清华之友——广药集团奖学金（学业优秀奖、科技创新奖）           |                                                              |
 | 2017 | 第11次CCF软件能力认证（CSP认证），470/500（全国最高分）      | [成绩单](/pdf/csptranscript.pdf)                             |
 | 2016 | 清华大学第18届电子设计大赛，三等奖                           |                                                              |
 | 2015 | 第32届全国青少年信息学奥林匹克竞赛（NOI2015），三等奖（铜牌） | [获奖名单](http://history.ccf.org.cn/resources/2567814757332/news/NOI2015%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%952015-12-25-10_52_58.htm) |
@@ -25,9 +26,9 @@
 
 ## 文章
 
-Shihong Song\*, **Jiayi Weng**\*, Hang Su, Dong Yan, Jun Zhu   [**Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning**](/cv/viz2018.html)   submitted to AAAI 2019 (under review)
+Jiayi Weng, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, and Hailong Yao. [**URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips**](/cv/urber.html). IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2018.
 
-**Jiayi Weng**, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, Hailong Yao   [**URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips**](/cv/urber.html)   Accepted by IEEE TCAD
+Shihong Song\*, **Jiayi Weng**\*, Hang Su, Dong Yan, Jun Zhu   [**Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning**](/cv/viz2018.html)   (under review)
 
 ## 竞赛
 
@@ -91,8 +92,8 @@ ViZDoom 2018 Track 1 是AI单人闯关模式，考核标准是最短时间内闯
 
 - 熟悉C、C++、Python
 - 了解Java、JavaScript、MATLAB、LaTeX
-- 英语四级：575
+- TOFEL：92；英语四级：575
 
-*上次更新于2018年9月14日*
+*上次更新于2018年12月11日*
 
 ------

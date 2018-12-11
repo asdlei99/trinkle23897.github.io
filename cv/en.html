@@ -2,44 +2,50 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>Jiayi Weng</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
+<title>en</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
-.in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export p { white-space: pre-wrap; }
 @media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
   .CodeMirror-gutters { display: none !important; }
 }
-.typora-export #write { margin: 0px auto; }
-#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
-#write li > table:first-child { margin-top: -20px; }
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; }
-input, button, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
-::before, ::after, * { box-sizing: border-box; }
-#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
-#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
 h3 { font-size: 1.6rem; }
 h4 { font-size: 1.4rem; }
 h5 { font-size: 1.2rem; }
 h6 { font-size: 1rem; }
-p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
-.typora-export p { white-space: normal; }
-.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
 .hidden { display: none; }
-.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; }
-#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
-#write > figure:first-child { margin-top: 16px; }
-figure { overflow-x: auto; margin: -8px 0px 0px -8px; max-width: calc(100% + 16px); padding: 8px; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
@@ -50,57 +56,58 @@ table.md-table td { min-width: 80px; }
 .CodeMirror pre { padding: 0px 4px; }
 .CodeMirror-lines { padding: 0px; }
 div.hr:focus { cursor: none; }
-pre { white-space: pre-wrap; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
 .md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
-.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
-.md-fences.mock-cm { white-space: pre-wrap; }
-.show-fences-line-number .md-fences { padding-left: 0px; }
-.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
-.CodeMirror-line { break-inside: avoid; }
-.footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
-.footnotes + .footnotes { margin-top: -1em; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
-li p, li .mathjax-block { margin: 0.5rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
 li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
-blockquote > :first-child { margin-top: 0px; }
-.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
 @media print {
-  html, body { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
-  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
-  p { orphans: 4; }
   html.blink-to-pdf { font-size: 13px; }
   .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
   .typora-export #write::after { height: 0px; }
-  @page { margin: 20mm 0mm; }
+  @page { margin: 20mm 0px; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
 p > img:only-child { display: block; margin: auto; }
-p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
-.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
-p + .mathjax-block { margin-top: -1.143rem; }
-.mathjax-block:not(:empty)::after { display: none; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
-.task-list { list-style-type: none; }
-.task-list-item { position: relative; padding-left: 1em; }
-.task-list-item input { position: absolute; top: 0px; left: 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
-.md-toc::after, .md-toc-content::after { display: none; }
+.md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
 .md-toc-item a { text-decoration: none; }
-.md-toc-inner:hover { }
+.md-toc-inner:hover { text-decoration: underline; }
 .md-toc-inner { display: inline-block; cursor: pointer; }
-.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
 .md-toc-h2 .md-toc-inner { margin-left: 2em; }
 .md-toc-h3 .md-toc-inner { margin-left: 4em; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
@@ -116,22 +123,27 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .footnote-line a:not(.reversefootnote) { color: inherit; }
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
-.md-tag { opacity: 0.5; }
-pre, code, tt { font-family: var(--monospace); }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
-code { text-align: left; }
-h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
-a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background: transparent !important; text-decoration: initial !important; text-shadow: initial !important; }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
-.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
 .MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
-[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
 table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
 
 
 :root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
@@ -141,10 +153,8 @@ table tr th { border-bottom: 0px; }
 @font-face { font-family: "Open Sans"; font-style: italic; font-weight: bold; src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff"); }
 html { font-size: 16px; }
 body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
-#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
 #write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
-body > :first-child { margin-top: 0px !important; }
-body > :last-child { margin-bottom: 0px !important; }
 a { color: rgb(65, 131, 196); }
 h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
 h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
@@ -162,34 +172,26 @@ h5 { font-size: 1em; }
 h6 { font-size: 1em; color: rgb(119, 119, 119); }
 p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
 li > ol, li > ul { margin: 0px; }
-hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border-width: 0px 0px 1px; border-style: none none solid; border-top-color: initial; border-right-color: initial; border-left-color: initial; border-image: initial; overflow: hidden; box-sizing: content-box; border-bottom-color: rgb(221, 221, 221); }
-body > h2:first-child { margin-top: 0px; padding-top: 0px; }
-body > h1:first-child { margin-top: 0px; padding-top: 0px; }
-body > h1:first-child + h2 { margin-top: 0px; padding-top: 0px; }
-body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 { margin-top: 0px; padding-top: 0px; }
-h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
 li p.first { display: inline-block; }
 ul, ol { padding-left: 30px; }
 ul:first-child, ol:first-child { margin-top: 0px; }
 ul:last-child, ol:last-child { margin-bottom: 0px; }
-blockquote { border-left: 4px solid rgb(221, 221, 221); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
 blockquote blockquote { padding-right: 0px; }
 table { padding: 0px; word-break: initial; }
-table tr { border-top: 1px solid rgb(204, 204, 204); margin: 0px; padding: 0px; }
-table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
-table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
-table tr td { border: 1px solid rgb(204, 204, 204); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
 table tr th:first-child, table tr td:first-child { margin-top: 0px; }
 table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
-.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); }
-.md-fences, code, tt { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 4px 0px; font-size: 0.9em; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 4px 2px; }
 .md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
-.task-list { padding-left: 0px; }
-.task-list-item { padding-left: 32px; }
-.task-list-item input { top: 3px; left: 8px; }
-@media screen and (min-width: 914px) {
-}
+.md-task-list-item > input { margin-left: -1.3em; }
 @media print {
   html { font-size: 13px; }
   table, pre { break-inside: avoid; }
@@ -198,31 +200,34 @@ table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
 .md-fences { background-color: rgb(248, 248, 248); }
 #write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
 .mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
 #write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
 #write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
 #write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
 #write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
-.md-image > .md-meta { border: 1px solid rgb(221, 221, 221); border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 4px 0px; font-size: 0.9em; color: inherit; }
-.md-tag { color: inherit; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
 .md-toc { margin-top: 20px; padding-bottom: 20px; }
 .sidebar-tabs { border-bottom: none; }
 #typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
 #typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
-#md-notification::before { top: 10px; }
 .on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
 header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
 .file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
 .mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
 .md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
 
 
 
 
 
-
+ .typora-export p, .typora-export .footnote-line {white-space: normal;} 
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-node'><h1><a name='header-n164' class='md-header-anchor '></a>Jiayi Weng (翁家翌)</h1><p><a href='/cv/zh.html'>Chinese version / 中文版本</a></p><p>Undergraduate, Department of Computer Science and Technology, Tsinghua University, China</p><p><a href='mailto:wengjy16@mails.tsinghua.edu.cn'>wengjy16@mails.tsinghua.edu.cn</a></p><h2><a name='header-n172' class='md-header-anchor '></a>Education</h2><ul><li><strong>2016 -</strong>, Undergraduate, Department of Computer Science and Technology, Tsinghua University, China; GPA：3.50/4.00 (ranking 15%) ,  <a href='/cv/courses_en.html'>details</a></li><li><strong>2013 - 2016</strong>, Fuzhou No.1 High School</li></ul><h2><a name='header-n180' class='md-header-anchor '></a>Personal Award</h2><figure><table><thead><tr><th>Year</th><th>Event</th><th>Link</th></tr></thead><tbody><tr><td>2017</td><td>Friend of Tsinghua, Guangzhou Pharmaceutical Holdings Limited Scholarship</td><td>&nbsp;</td></tr><tr><td>2017</td><td>11th CCF Computer Software Certification, Passed with highest score</td><td><a href='/pdf/csptranscript.pdf'>Transcript (in Chinese)</a></td></tr><tr><td>2016</td><td>18th annual Electronic Design Competition in Tsinghua University, Third prize</td><td>&nbsp;</td></tr><tr><td>2015</td><td>32nd National Olympiad in Informatics (NOI2015), Third prize (bronze medal)</td><td><a href='http://history.ccf.org.cn/resources/2567814757332/news/NOI2015%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%952015-12-25-10_52_58.htm'>Winners (in Chinese)</a></td></tr><tr><td>2015</td><td>The Chinese Team Selection Contest for IOI 2015 (CTSC2015), Second prize (silver medal)</td><td><a href='http://www.noi.cn/noi-news/huojiang/666-ccf-ctsc2015'>Winners (in Chinese)</a></td></tr><tr><td>2015</td><td>9th  Asia-Pacific Informatics Olympiad (China District), Second prize (silver medal)</td><td><a href='http://www.noi.cn/noi-news/huojiang/667-apio2015'>Winners (in Chinese)</a></td></tr><tr><td>2015</td><td>2015 National Youth Informatics Olympic Competition Winter Camp, Second prize</td><td><a href='http://download.noi.cn/T/2015/NOI2015dly.htm'>Winners (in Chinese)</a></td></tr></tbody></table></figure><h2><a name='header-n214' class='md-header-anchor '></a>Publication</h2><p>Shihong Song*, <strong>Jiayi Weng</strong>*, Hang Su, Dong Yan, Jun Zhu   <a href='/cv/viz2018.html'><strong>Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning</strong></a>   submitted to AAAI 2019 (under review)</p><p><strong>Jiayi Weng</strong>, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, Hailong Yao   <a href='/cv/urber.html'><strong>URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips</strong></a>   Accepted by IEEE TCAD</p><h2><a name='header-n219' class='md-header-anchor '></a>Competition</h2><h3><a name='header-n220' class='md-header-anchor '></a>Visual Doom AI Competition at <a href='https://project.dke.maastrichtuniversity.nl/cig2018/'>CIG2018</a> Singleplayer Track (1), Winner</h3><p>Doom is the FPS (First Person Shooter) game launched in 1993, which is a popular test site for AI research. In 2016, the game-based ViZDoom AI competition was born, researching reinforcement learning techniques that capture raw visual information, and appealing to many top-level laboratories such as the 2016 champions Facebook FAIR (Track 1) and Intel (Track 2), 2017 Champion Marvin (Track 1) and Carnegie Mellon University (Track 2).</p><p>ViZDoom 2018 Track 1 is the single-player mode. The agent has to beat random generated levels as fast as possible. Different from the classic deathmatch scenario in the past, AI should complete many complicated tasks such as exploring, collecting resources, avoiding traps, killing monsters, and finding final goal. It requires extremely high task understanding and environmental awareness of AI. Of the 204 robots submitted by 53 international teams, only 6 teams achieved meaningful results.</p><p>Facing with this complex task, our team proposed a hierachical reinforcement learning method guided by environmental information. Based on the effective perception of environmental information, our method integrates environmental feedback and reinforcement learning reward signals, making AI excellent performance. We stayed first in absolute advantage in the preliminaries and won the championship in the final.</p><p>Here is the link for <a href='http://vizdoom.cs.put.edu.pl/competition-cig-2018/competition-results'>the official results of the competition</a> and <a href='https://www.jiqizhixin.com/articles/2018-08-23-12'>the news report of Chinese media</a>.</p><h2><a name='header-n229' class='md-header-anchor '></a>Project</h2><h3><a name='header-n230' class='md-header-anchor '></a>Course Project</h3><ul><li>Realistic Image Rendering (implement Path Tracing algorithm, Progressive Photon Mapping (PPM) algorithm, Stochastic Progressive Photon Mapping (SPPM)algorithm, render 3D models with Bezier surface) : <a href='https://github.com/Trinkle23897/Computational-Graphics-THU-2018'>Code</a> - project for Computational Graphics course</li><li>Super fast escape routing algorithm for multi-point pairs: <a href='https://trinkle23897.github.io/demo.html'>Demonstration</a> - project for fundamental OOP course</li><li>Android-based simple news reader: <a href='https://github.com/Trinkle23897/simple-news-android-app'>Code</a> - Java Program Design and Training course</li><li>Sudoku game, in Qt C++ (rated as excellent homework): <a href='https://github.com/Trinkle23897/sudoku-qt5'>Code</a></li><li>C/S Draughts game online, in Qt C++: <a href='https://github.com/Trinkle23897/draughts-qt5'>Code</a></li><li>Wikipedia Character Information Retrieval System, in Python with Django: <a href='https://github.com/Trinkle23897/list_of_people'>Code</a></li></ul><h3><a name='header-n250' class='md-header-anchor '></a>Internship Project</h3><h4><a name='header-n251' class='md-header-anchor '></a>Fast Multi-frame Noise Reduction - AI-based ISP Pipeline</h4><p>In scenes of dark light and backlighting, image captured by photographic equipment will produce very obvious particle noise after passing through the traditional image processing pipeline (ISP Pipeline), which will adversely affect the image quality and even reduce the performance of the back-end neural network. For example, in video surveillance, noise in night scenes can greatly reduce the accuracy of face recognition. Therefore, image noise reduction is a very important part of ISP.</p><p>Previous papers have proposed some methods for spatial noise reduction using neural networks, which are significantly better than traditional noise reduction methods (e.g. NLM, BM3D, VBM4D), but due to speed reasons, such as video surveillance requires at least 30fps for <strong>full resolution images</strong> processing speed, it cannot be directly applied to the industry.</p><p>I designed a temporal &amp; spatial domain based noise reduction network. Using 8 consecutive 12M pixel images (e.g. 4032*3024) as input, it can get the noise reduction result in the ~70ms time on one GTX1060. It is much faster than all previous methods, and the quality of noise reduction is significantly better than some methods that only use spatial noise reduction. Due to the internship agreement, the code has not been made public.</p><h2><a name='header-n258' class='md-header-anchor '></a>Internship</h2><ul><li>2018.3 - 2018.7  SenseTime Inc., Department of Front-end Interactive Computing, Trainee Researcher, <a href='https://www.sensetime.com/'>Company Website</a></li></ul><h2><a name='header-n263' class='md-header-anchor '></a>Patent</h2><ul><li>Hailong Yao, <strong>Jiayi Weng</strong>, Escape Routing Method, <a href='https://patents.google.com/patent/CN107992666A/en'>CN107992666A</a>, 2017-11-28</li><li>Hailong Yao, Yixin Li, <strong>Jiayi Weng</strong>, Rapid Wiring Method and Device for Large-scale Microfluidic Bipchip, <a href='https://patents.google.com/patent/CN107491598A/en'>CN107491598A</a>, 2017-07-28</li></ul><h2><a name='header-n268' class='md-header-anchor '></a>Problem-Setting</h2><p>I have participated in problem-setting in several competitions of informatics, including Chinese Team Training (CTT), Tsinghua University Informatics Summer Camp for Excellent High School Student(THUSC), Tsinghua University Programming Competition and College Invitational Tournament (THUPC), etc.</p><figure><table><thead><tr><th>Contest</th><th>Task</th><th>Link</th></tr></thead><tbody><tr><td>THUPC 2018</td><td>Rowing</td><td><a href='https://loj.ac/problem/6388'>Statement (in Chinese)</a></td></tr><tr><td>THUPC 2018</td><td>Third Cryptography Assignment</td><td><a href='https://loj.ac/problem/6392'>Statement (in Chinese)</a></td></tr><tr><td>CTT 2017</td><td>Simple Data Structure</td><td><a href='https://loj.ac/problem/2326'>Statement (in Chinese)</a></td></tr><tr><td>THUSCU 2016</td><td>Wage</td><td><a href='https://git.thusaac.org/publish/THUSCU2017/tree/master/day1/wage'>Statement (in Chinese)</a></td></tr><tr><td>THUSC 2016</td><td>Professor Du</td><td>Not yet public</td></tr><tr><td>THUSC 2016</td><td>Cosmic Broadcast</td><td>Not yet public</td></tr><tr><td>CTT 2016</td><td>How to Elegantly Sum Up</td><td><a href='http://uoj.ac/problem/269'>Statement (in Chinese)</a></td></tr></tbody></table></figure><h2><a name='header-n304' class='md-header-anchor '></a>Others</h2><ul><li>Familiar with C, C++, Python</li><li>Know Java, JavaScript, MATLAB, LaTeX</li><li>CET-4: 575</li></ul><p><em>Last update on September 14, 2018</em></p><hr /></div>
+<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>Jiayi Weng (翁家翌)</h1><p><a href='/cv/zh.html'>Chinese version / 中文版本</a></p><p>Undergraduate, Department of Computer Science and Technology, Tsinghua University, China</p><p><a href='mailto:wengjy16@mails.tsinghua.edu.cn'>wengjy16@mails.tsinghua.edu.cn</a></p><h2><a name='header-n5' class='md-header-anchor '></a>Education</h2><ul><li><strong>2016 -</strong>, Undergraduate, Department of Computer Science and Technology, Tsinghua University, China; GPA：3.50/4.00 (ranking 15%) ,  <a href='/cv/courses_en.html'>details</a></li><li><strong>2013 - 2016</strong>, Fuzhou No.1 High School</li></ul><h2><a name='header-n11' class='md-header-anchor '></a>Personal Award</h2><figure><table><thead><tr><th>Year</th><th>Event</th><th>Link</th></tr></thead><tbody><tr><td>2018</td><td>Friend of Tsinghua, Suzhou Industrial Park Scholarship (Comprehensive Excellence Award)</td><td>&nbsp;</td></tr><tr><td>2017</td><td>Friend of Tsinghua, Guangzhou Pharmaceutical Holdings Limited Scholarship (Academic Excellence Award, Science and Technology Innovation Award)</td><td>&nbsp;</td></tr><tr><td>2017</td><td>11th CCF Computer Software Certification, Passed with highest score</td><td><a href='/pdf/csptranscript.pdf'>Transcript (in Chinese)</a></td></tr><tr><td>2016</td><td>18th annual Electronic Design Competition in Tsinghua University, Third prize</td><td>&nbsp;</td></tr><tr><td>2015</td><td>32nd National Olympiad in Informatics (NOI2015), Third prize (bronze medal)</td><td><a href='http://history.ccf.org.cn/resources/2567814757332/news/NOI2015%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%952015-12-25-10_52_58.htm'>Winners (in Chinese)</a></td></tr><tr><td>2015</td><td>The Chinese Team Selection Contest for IOI 2015 (CTSC2015), Second prize (silver medal)</td><td><a href='http://www.noi.cn/noi-news/huojiang/666-ccf-ctsc2015'>Winners (in Chinese)</a></td></tr><tr><td>2015</td><td>9th  Asia-Pacific Informatics Olympiad (China District), Second prize (silver medal)</td><td><a href='http://www.noi.cn/noi-news/huojiang/667-apio2015'>Winners (in Chinese)</a></td></tr><tr><td>2015</td><td>2015 National Youth Informatics Olympic Competition Winter Camp, Second prize</td><td><a href='http://download.noi.cn/T/2015/NOI2015dly.htm'>Winners (in Chinese)</a></td></tr></tbody></table></figure><h2><a name='header-n49' class='md-header-anchor '></a>Publication</h2><p>Jiayi Weng, Tsung-Yi Ho, Weiqing Ji, Peng Liu, Mengdi Bao, and Hailong Yao. <a href='/cv/urber.html'><strong>URBER: Ultrafast Rule-Based Escape Routing Method for Large-Scale Sample Delivery Biochips</strong></a>. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2018.</p><p>Shihong Song*, <strong>Jiayi Weng</strong>*, Hang Su, Dong Yan, Jun Zhu   <a href='/cv/viz2018.html'><strong>Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning</strong></a>   (under review)</p><h2><a name='header-n52' class='md-header-anchor '></a>Competition</h2><h3><a name='header-n53' class='md-header-anchor '></a>Visual Doom AI Competition at <a href='https://project.dke.maastrichtuniversity.nl/cig2018/'>CIG2018</a> Singleplayer Track (1), Winner</h3><p>Doom is the FPS (First Person Shooter) game launched in 1993, which is a popular test site for AI research. In 2016, the game-based ViZDoom AI competition was born, researching reinforcement learning techniques that capture raw visual information, and appealing to many top-level laboratories such as the 2016 champions Facebook FAIR (Track 1) and Intel (Track 2), 2017 Champion Marvin (Track 1) and Carnegie Mellon University (Track 2).</p><p>ViZDoom 2018 Track 1 is the single-player mode. The agent has to beat random generated levels as fast as possible. Different from the classic deathmatch scenario in the past, AI should complete many complicated tasks such as exploring, collecting resources, avoiding traps, killing monsters, and finding final goal. It requires extremely high task understanding and environmental awareness of AI. Of the 204 robots submitted by 53 international teams, only 6 teams achieved meaningful results.</p><p>Facing with this complex task, our team proposed a hierachical reinforcement learning method guided by environmental information. Based on the effective perception of environmental information, our method integrates environmental feedback and reinforcement learning reward signals, making AI excellent performance. We stayed first in absolute advantage in the preliminaries and won the championship in the final.</p><p>Here is the link for <a href='http://vizdoom.cs.put.edu.pl/competition-cig-2018/competition-results'>the official results of the competition</a> and <a href='https://www.jiqizhixin.com/articles/2018-08-23-12'>the news report of Chinese media</a>.</p><h2><a name='header-n58' class='md-header-anchor '></a>Project</h2><h3><a name='header-n59' class='md-header-anchor '></a>Course Project</h3><ul><li>Realistic Image Rendering (implement Path Tracing algorithm, Progressive Photon Mapping (PPM) algorithm, Stochastic Progressive Photon Mapping (SPPM)algorithm, render 3D models with Bezier surface) : <a href='https://github.com/Trinkle23897/Computational-Graphics-THU-2018'>Code</a> - project for Computational Graphics course</li><li>Super fast escape routing algorithm for multi-point pairs: <a href='https://trinkle23897.github.io/demo.html'>Demonstration</a> - project for fundamental OOP course</li><li>Android-based simple news reader: <a href='https://github.com/Trinkle23897/simple-news-android-app'>Code</a> - Java Program Design and Training course</li><li>Sudoku game, in Qt C++ (rated as excellent homework): <a href='https://github.com/Trinkle23897/sudoku-qt5'>Code</a></li><li>C/S Draughts game online, in Qt C++: <a href='https://github.com/Trinkle23897/draughts-qt5'>Code</a></li><li>Wikipedia Character Information Retrieval System, in Python with Django: <a href='https://github.com/Trinkle23897/list_of_people'>Code</a></li></ul><h3><a name='header-n74' class='md-header-anchor '></a>Internship Project</h3><h4><a name='header-n75' class='md-header-anchor '></a>Fast Multi-frame Noise Reduction - AI-based ISP Pipeline</h4><p>In scenes of dark light and backlighting, image captured by photographic equipment will produce very obvious particle noise after passing through the traditional image processing pipeline (ISP Pipeline), which will adversely affect the image quality and even reduce the performance of the back-end neural network. For example, in video surveillance, noise in night scenes can greatly reduce the accuracy of face recognition. Therefore, image noise reduction is a very important part of ISP.</p><p>Previous papers have proposed some methods for spatial noise reduction using neural networks, which are significantly better than traditional noise reduction methods (e.g. NLM, BM3D, VBM4D), but due to speed reasons, such as video surveillance requires at least 30fps for <strong>full resolution images</strong> processing speed, it cannot be directly applied to the industry.</p><p>I designed a temporal &amp; spatial domain based noise reduction network. Using 8 consecutive 12M pixel images (e.g. 4032*3024) as input, it can get the noise reduction result in the ~70ms time on one GTX1060. It is much faster than all previous methods, and the quality of noise reduction is significantly better than some methods that only use spatial noise reduction. Due to the internship agreement, the code has not been made public.</p><h2><a name='header-n79' class='md-header-anchor '></a>Internship</h2><ul><li>2018.3 - 2018.7  SenseTime Inc., Department of Front-end Interactive Computing, Trainee Researcher, <a href='https://www.sensetime.com/'>Company Website</a></li></ul><h2><a name='header-n83' class='md-header-anchor '></a>Patent</h2><ul><li>Hailong Yao, <strong>Jiayi Weng</strong>, Escape Routing Method, <a href='https://patents.google.com/patent/CN107992666A/en'>CN107992666A</a>, 2017-11-28</li><li>Hailong Yao, Yixin Li, <strong>Jiayi Weng</strong>, Rapid Wiring Method and Device for Large-scale Microfluidic Bipchip, <a href='https://patents.google.com/patent/CN107491598A/en'>CN107491598A</a>, 2017-07-28</li></ul><h2><a name='header-n89' class='md-header-anchor '></a>Problem-Setting</h2><p>I have participated in problem-setting in several competitions of informatics, including Chinese Team Training (CTT), Tsinghua University Informatics Summer Camp for Excellent High School Student(THUSC), Tsinghua University Programming Competition and College Invitational Tournament (THUPC), etc.</p><figure><table><thead><tr><th>Contest</th><th>Task</th><th>Link</th></tr></thead><tbody><tr><td>THUPC 2018</td><td>Rowing</td><td><a href='https://loj.ac/problem/6388'>Statement (in Chinese)</a></td></tr><tr><td>THUPC 2018</td><td>Third Cryptography Assignment</td><td><a href='https://loj.ac/problem/6392'>Statement (in Chinese)</a></td></tr><tr><td>CTT 2017</td><td>Simple Data Structure</td><td><a href='https://loj.ac/problem/2326'>Statement (in Chinese)</a></td></tr><tr><td>THUSCU 2016</td><td>Wage</td><td><a href='https://git.thusaac.org/publish/THUSCU2017/tree/master/day1/wage'>Statement (in Chinese)</a></td></tr><tr><td>THUSC 2016</td><td>Professor Du</td><td>Not yet public</td></tr><tr><td>THUSC 2016</td><td>Cosmic Broadcast</td><td>Not yet public</td></tr><tr><td>CTT 2016</td><td>How to Elegantly Sum Up</td><td><a href='http://uoj.ac/problem/269'>Statement (in Chinese)</a></td></tr></tbody></table></figure><h2><a name='header-n124' class='md-header-anchor '></a>Others</h2><ul><li>Familiar with C, C++, Python</li><li>Know Java, JavaScript, MATLAB, LaTeX</li><li>TOEFL: 92; CET-4: 575</li></ul><p><em>Last update on December 11th, 2018</em></p><hr /></div>
 </body>
 </html>
