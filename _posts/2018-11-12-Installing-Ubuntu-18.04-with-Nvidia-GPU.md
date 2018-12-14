@@ -34,19 +34,6 @@ layout: post
 
 3. `sudo apt remove libreoffice* && sudo apt update && sudo apt upgrade && sudo apt autoremove`
 
-	<!--4. 禁用nouveau：`sudo vim /etc/modprobe.d/blacklist.conf` 添加 `blacklist nouveau`；`sudo vim /etc/modprobe.d/blacklist-nouveau.conf` 添加
-
-   ```bash
-   blacklist nouveau
-   blacklist lbm-nouveau
-   options nouveau modeset=0
-   alias nouveau off
-   alias lbm-nouveau off
-   ```
-
-   然后 `sudo update-initramfs -u`
-	-->
-
 5. 安装驱动：`sudo ubuntu-drivers autoinstall`
 
 6. `sudo add-apt-repository ppa:nilarimogard/webupd8; sudo apt install prime-indicator` 切换N卡
