@@ -14,11 +14,27 @@ layout: post
 
 1. 修改 `/etc/apt/sources.list` 为tuna镜像源
 
+   ```bash
+   # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+   deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+   # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+   deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+   # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+   deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+   # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+   deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+   # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+
+   # 预发布软件源，不建议启用
+   # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+   # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+   ```
+
 2. 无线网络在Y7000P机子上会挂，应该是硬件问题，使用命令 `sudo modprobe -r ideapad_laptop` 即可启动
 
 3. `sudo apt remove libreoffice* && sudo apt update && sudo apt upgrade && sudo apt autoremove`
 
-4. 禁用nouveau：`sudo vim /etc/modprobe.d/blacklist.conf` 添加 `blacklist nouveau`；`sudo vim /etc/modprobe.d/blacklist-nouveau.conf` 添加
+<!--4. 禁用nouveau：`sudo vim /etc/modprobe.d/blacklist.conf` 添加 `blacklist nouveau`；`sudo vim /etc/modprobe.d/blacklist-nouveau.conf` 添加
 
    ```bash
    blacklist nouveau
@@ -29,13 +45,14 @@ layout: post
    ```
 
    然后 `sudo update-initramfs -u`
+-->
 5. 安装驱动：`sudo ubuntu-drivers autoinstall`
 
 6. `sudo add-apt-repository ppa:nilarimogard/webupd8; sudo apt install prime-indicator` 切换N卡
 
 7. `sudo add-apt-repository ppa:linrunner/tlp; sudo apt install tlp` 自动调整频率省电
 
-8. `sudo apt install git htop zsh vim tmux cmake curl axel texlive-full gummi proxychains python-pip python3-pip libopencv-dev libboost-dev gnome-tweak-tool openvpn openssl mpv wine64 xclip enca apache2 php7.2 unrar ruby gnome-shell-extensions dos2unix xserver-xorg-input-synaptics libinput-tools xdotool; sudo gem install fusuma` 并安装oh-my-zsh 和.tmux
+8. `sudo apt install git htop zsh vim tmux cmake curl axel texlive-full gummi proxychains python-pip python3-pip libopencv-dev libboost-dev gnome-tweak-tool openvpn openssl mpv wine64 xclip enca apache2 php7.2 unrar ruby gnome-shell-extensions dos2unix xserver-xorg-input-synaptics libinput-tools xdotool icdiff g++-5 gcc-5 openjdk-11-jdk net-tools libglew-dev libcanberra-gtk-module libcanberra-gtk3-module; sudo gem install fusuma` 并安装oh-my-zsh 和.tmux
 
    ```bash
    # 如果是第一次
@@ -45,12 +62,12 @@ layout: post
    ln -s -f .tmux/.tmux.conf
    cp .tmux/.tmux.conf.local .
    # 如果装过了
-   chsh -s /usr/bin/tmux
+   chsh -s /usr/bin/zsh
    ```
 
 9. 安装 chrome、typora、sublime、teamviewer、wps-office、sogoupinyin、vmware
 
-10. 修改 `~/.pip/pip.conf` 然后 `sudo pip3 install pip torch torchvision opencv-python tensorflow-gpu jupyter matplotlib ipython --upgrade `
+10. 修改 `~/.pip/pip.conf` 然后 `sudo pip3 install pip torch torchvision opencv-python tensorflow-gpu jupyter matplotlib ipython shadowsocks --upgrade `
 
 11. 同时安装macbuntu
 
@@ -83,6 +100,24 @@ layout: post
 
 15. `sudo vim /usr/local/lib/python3.6/dist-packages/shadowsocks/crypto/openssl.py` 改52和111行改成 `libcrypto.EVP_CIPHER_CTX_reset` 不然ss起不起来
 
+16. 开启apache2：
+	
+	```bash
+	cd /etc/apache2
+	
+	# first change document root
+	vim apache2.conf
+	# change line 170
+	vim sites-available/000-default.conf
+	# change line 12
+	vim sites-available/default-ssl.conf
+	# change line 5
+
+	# then change php file upload conf
+	cd /etc/php/7.2/apache2/
+	vim php.ini
+	# change line 383, 393, 404, 672, 825, 853
+	```
 
 ### 效果图
 
