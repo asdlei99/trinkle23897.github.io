@@ -38,9 +38,7 @@ layout: post
 
 6. `sudo add-apt-repository ppa:nilarimogard/webupd8; sudo apt install prime-indicator` 切换N卡
 
-7. `sudo add-apt-repository ppa:linrunner/tlp; sudo apt install tlp` 自动调整频率省电
-
-8. `sudo apt install git htop zsh vim tmux cmake curl axel texlive-full gummi proxychains python-pip python3-pip libopencv-dev libboost-dev gnome-tweak-tool openvpn openssl mpv wine64 xclip enca apache2 php7.2 unrar ruby gnome-shell-extensions dos2unix xserver-xorg-input-synaptics libinput-tools xdotool icdiff g++-5 gcc-5 openjdk-11-jdk net-tools libglew-dev libcanberra-gtk-module libcanberra-gtk3-module; sudo gem install fusuma` 并安装oh-my-zsh 和.tmux
+8. `sudo apt install git htop zsh vim tmux cmake curl axel texlive-full gummi proxychains python-pip python3-pip libopencv-dev libboost-dev gnome-tweak-tool openvpn openssl mpv wine64 xclip enca apache2 php7.2 unrar ruby gnome-shell-extensions dos2unix xserver-xorg-input-synaptics libinput-tools xdotool icdiff g++-5 gcc-5 openjdk-11-jdk net-tools libglew-dev libcanberra-gtk-module libcanberra-gtk3-module tlp freeglut3 freeglut3-dev; sudo gem install fusuma` 并安装oh-my-zsh 和.tmux
 
    ```bash
    # 如果是第一次
