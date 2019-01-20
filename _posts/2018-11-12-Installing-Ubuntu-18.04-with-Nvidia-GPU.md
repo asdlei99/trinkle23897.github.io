@@ -38,7 +38,7 @@ layout: post
 
 5. `sudo add-apt-repository ppa:nilarimogard/webupd8; sudo apt install prime-indicator` 图形界面切换N卡
 
-6. `sudo apt install git htop zsh vim tmux cmake curl axel texlive-full gummi proxychains python-pip python3-pip libopencv-dev libboost-dev gnome-tweak-tool openvpn openssl mpv wine64 xclip enca apache2 php7.2 unrar ruby gnome-shell-extensions dos2unix xserver-xorg-input-synaptics libinput-tools xdotool icdiff g++-5 gcc-5 openjdk-11-jdk net-tools libglew-dev libcanberra-gtk-module libcanberra-gtk3-module tlp freeglut3 freeglut3-dev pandoc; sudo gem install fusuma` 并安装oh-my-zsh 和.tmux
+6. `sudo apt install git htop zsh vim tmux cmake curl axel openssh-server texlive-full gummi proxychains python-pip python3-pip libopencv-dev libboost-dev gnome-tweak-tool openvpn openssl mpv wine64 xclip enca apache2 php7.2 unrar ruby gnome-shell-extensions dos2unix xserver-xorg-input-synaptics libinput-tools xdotool icdiff g++-5 gcc-5 openjdk-11-jdk net-tools libglew-dev libcanberra-gtk-module libcanberra-gtk3-module tlp freeglut3 freeglut3-dev pandoc ttf-mscorefonts-installer binwalk; sudo gem install fusuma` 并安装oh-my-zsh 和.tmux
 
    ```bash
    # 如果是第一次
