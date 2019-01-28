@@ -32,7 +32,7 @@ layout: post
 
 2. 无线网络在Y7000P机子上会挂，应该是硬件问题，使用命令 `sudo modprobe -r ideapad_laptop` 即可启动
 
-3. `sudo apt remove libreoffice* && sudo apt update && sudo apt upgrade && sudo apt autoremove`
+3. `sudo apt remove libreoffice* thunderbird* && sudo apt update && sudo apt upgrade && sudo apt autoremove`
 
 4. 安装驱动：`sudo ubuntu-drivers autoinstall`
 
