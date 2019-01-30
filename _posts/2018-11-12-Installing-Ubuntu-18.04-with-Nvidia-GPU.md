@@ -15,19 +15,10 @@ layout: post
 1. 修改 `/etc/apt/sources.list` 为tuna镜像源
 
    ```bash
-   # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
-   # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-   # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-   # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-   # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-   
-   # 预发布软件源，不建议启用
-   # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-   # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
    ```
 
 2. 无线网络在Y7000P机子上会挂，应该是硬件问题，使用命令 `sudo modprobe -r ideapad_laptop` 即可启动
@@ -105,14 +96,13 @@ layout: post
    # change line 383, 393, 404, 672, 825, 853
    ```
 
-15. 禁止内核更新（防止双显示屏出bug），版本号要改为当前最新的内核版本
+15. 禁止内核更新（防止双显示屏出bug）
 
    ```bash
-   sudo apt-mark hold linux-headers-4.15.0-43 
-   sudo apt-mark hold linux-headers-4.15.0-43-generic 
-   sudo apt-mark hold linux-image-4.15.0-43-generic 
-   sudo apt-mark hold linux-modules-4.15.0-43-generic 
-   sudo apt-mark hold linux-modules-extra-4.15.0-43-generic 
+   sudo apt-mark hold linux-generic                        
+   sudo apt-mark hold linux-headers-generic
+   sudo apt-mark hold linux-image-generic  
+   sudo apt-mark hold linux-signed-generic 
    ```
 
 
