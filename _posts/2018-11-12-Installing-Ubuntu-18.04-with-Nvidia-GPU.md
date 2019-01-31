@@ -110,3 +110,56 @@ layout: post
 
 ![](/images/htop.png)
 
+### Bash Script
+
+```bash
+#!/bin/bash
+
+echo "deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse" > /etc/apt/sources.list
+apt remove -y libreoffice* thunderbird* && apt update && apt -y upgrade && apt -y autoremove
+apt install -y htop
+ubuntu-drivers autoinstall
+apt install -y ruby python-pip python3-pip
+gem install fusuma &
+pip3 install pip torch torchvision opencv-python tensorflow-gpu jupyter matplotlib ipython shadowsocks mitmproxy bs4 gpustat scikit-image --upgrade &
+cd /data/install
+dpkg -i google-chrome-stable_71.0.3578.98-1_amd64.deb macbuntu-os-icons-v1804_3.3\~bionic\~NoobsLab.com_all.deb macbuntu-os-ithemes-v1804_3.3\~bionic\~NoobsLab.com_all.deb netease-cloud-music_1.1.0_amd64_ubuntu.deb sogoupinyin_2.2.0.0108_amd64.deb sublime-text_3176_amd64.deb typora_0.9.62-1_amd64.deb wps-office_10.1.0.6757_amd64.deb wps-office-fonts_1.0_all.deb
+apt install -f -y
+./VMware-Workstation-Full-14.1.1-7528167.x86_64.bundle &
+# ZC5XK-A6E0M-080XQ-04ZZG-YF08D 
+apt install -y git zsh vim tmux cmake curl axel openssh-server gummi proxychains libopencv-dev libboost-dev gnome-tweak-tool openvpn openssl mpv xclip enca apache2 php7.2 unrar gnome-shell-extensions dos2unix xserver-xorg-input-synaptics libinput-tools xdotool pandoc icdiff g++-5 gcc-5 openjdk-11-jdk net-tools libglew-dev libcanberra-gtk-module libcanberra-gtk3-module tlp freeglut3 freeglut3-dev pandoc ttf-mscorefonts-installer ansible binwalk
+chsh trinkle -s /usr/bin/zsh
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 10
+update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 10
+cd cuda9.0
+./cuda_9.0.176_384.81_linux-run
+./cuda_9.0.176.1_linux-run
+./cuda_9.0.176.2_linux-run
+./cuda_9.0.176.3_linux-run
+./cuda_9.0.176.4_linux-run
+cd cudnn-9.0-linux-x64-v7.4.1.5/cuda
+cp include/cudnn.h /usr/local/cuda/include/
+cp lib64/libcudnn* /usr/local/cuda/lib64/
+
+cd
+cp install_bak/apache2.conf /etc/apache2/apache2.conf
+cp install_bak/ports.conf /etc/apache2/ports.conf
+cp install_bak/000-default.conf /etc/apache2/sites-available/000-default.conf
+cp install_bak/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf
+cp install_bak/php.ini /etc/php/7.2/apache2/php.ini
+cp install_bak/proxychains.conf /etc/proxychains.conf
+cp install_bak/hosts /etc/ansible/hosts
+cp install_bak/sshd_config /etc/ssh/sshd_config
+cp install_bak/openssl.py /usr/local/lib/python3.6/dist-packages/shadowsocks/crypto/openssl.py
+service apache2 restart
+service ssh restart
+
+apt-mark hold linux-generic                        
+apt-mark hold linux-headers-generic
+apt-mark hold linux-image-generic  
+apt-mark hold linux-signed-generic 
+# apt install -y texlive-full wine64
+```
