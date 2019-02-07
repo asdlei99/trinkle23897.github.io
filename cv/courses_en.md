@@ -2,37 +2,43 @@
 
 [Back](/cv/en.html)
 
-GPA：3.50/4.00 (15%)
+GPA：3.51/4.00 (15%)
 
-I have complete 119 credits of courses (out of 170 required for graduation). These are completed courses about computer science:
+I have complete 143 credits of courses (out of 170 required for graduation). These are completed courses about computer science:
 
-| Course        | Grade | Point | Credit |
-| -------------------- | ---- | ---- | ---- |
-| Fundamentals of Computer Graphics | A+   | 4.0  | 2    |
-| Fundamentals of Programming | A    | 4.0  | 3    |
-| Foundation of Object-Oriented Programming | A    | 4.0  | 2    |
-| Programing and Training | A    | 4.0  | 2    |
-| Data Structures | A    | 4.0  | 4    |
-| Elementary Number Theory | A    | 4.0  | 2    |
-| Introduction to Information Science and Technology | A-   | 3.7  | 1    |
-| Fundamentals of Electronics | A-   | 3.7  | 3    |
-| Experiment of Fundamentals electronics | A-   | 3.7  | 1    |
-| Network security engineering and practice | A-   | 3.7  | 2    |
-| Digital Logic Experimentation |   A-   |   3.7   |   1   |
-| Java Program Design and Training |   A-   |   3.7   |   2   |
-| Discrete Mathematics(1) | B+   | 3.3  | 3    |
-| Discrete Mathematics(2) | B+   | 3.3  | 3    |
-| Introduction to Artificial Intelligence | B+   | 3.3  | 2    |
-| Digital Logic Circuit | B+ | 3.3 | 3 |
-| Digital Image Processing | B+ | 3.3 | 2 |
-| Formal Languages and Automata | B+ | 3.3 | 2 |
-| Assembly Language Programming | B+ | 3.3 | 3 |
+| Course                                             | Grade | Point | Credit |
+| -------------------------------------------------- | ----- | ----- | ------ |
+| Fundamentals of Computer Graphics                  | A+    | 4.0   | 2      |
+| Fundamentals of Programming                        | A     | 4.0   | 3      |
+| Foundation of Object-Oriented Programming          | A     | 4.0   | 2      |
+| Programing and Training                            | A     | 4.0   | 2      |
+| Data Structures                                    | A     | 4.0   | 4      |
+| Elementary Number Theory                           | A     | 4.0   | 2      |
+| Theory of Computer Network                         | A     | 4.0   | 3      |
+| Artificial Neural Networks                         | A     | 4.0   | 2      |
+| Introduction to Information Science and Technology | A-    | 3.7   | 1      |
+| Fundamentals of Electronics                        | A-    | 3.7   | 3      |
+| Experiment of Fundamentals electronics             | A-    | 3.7   | 1      |
+| Network security engineering and practice          | A-    | 3.7   | 2      |
+| Digital Logic Experimentation                      | A-    | 3.7   | 1      |
+| Java Program Design and Training                   | A-    | 3.7   | 2      |
+| Principles of Signal Processing                    | A-    | 3.7   | 3      |
+| Principles and Practice of Compiler Construction   | A-    | 3.7   | 2      |
+| Discrete Mathematics(1)                            | B+    | 3.3   | 3      |
+| Discrete Mathematics(2)                            | B+    | 3.3   | 3      |
+| Introduction to Artificial Intelligence            | B+    | 3.3   | 2      |
+| Digital Logic Circuit                              | B+    | 3.3   | 3      |
+| Digital Image Processing                           | B+    | 3.3   | 2      |
+| Formal Languages and Automata                      | B+    | 3.3   | 2      |
+| Assembly Language Programming                      | B+    | 3.3   | 3      |
+| Computer Network Security Technology               | B+    | 3.3   | 2      |
 
 
 I also got good grades in these courses:
 
 | Course                                    | Grade | Point | Credit |
 | ----------------------------------------- | ----- | ----- | ------ |
+| Students Research Training                | A+    | 4.0   | 3      |
 | Linear Algebra(1)                         | A     | 4.0   | 4      |
 | Calculus A(2)                             | A     | 4.0   | 5      |
 | Stochastic Mathematical Methods           | A     | 4.0   | 3      |
@@ -60,6 +66,6 @@ Tsinghua way of GPA calculation:
 | D     | 62-60  | 1.0   |
 | F     | ≤59    | 0.0   |
 
-*Last updated on December 11th, 2018*
+*Last updated on Feburary 1st, 2019*
 
 ------

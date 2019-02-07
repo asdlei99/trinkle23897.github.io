@@ -8,7 +8,7 @@ Undergraduate, Department of Computer Science and Technology, Tsinghua Universit
 
 ## Education
 
-- **2016 -**, Undergraduate, Department of Computer Science and Technology, Tsinghua University, China; GPA：3.50/4.00 (ranking 15%) ,  [details](/cv/courses_en.html)
+- **2016 -**, Undergraduate, Department of Computer Science and Technology, Tsinghua University, China; GPA：3.51/4.00 (ranking 15%) ,  [details](/cv/courses_en.html)
 - **2013 - 2016**, Fuzhou No.1 High School
 
 ## Personal Award
@@ -93,6 +93,6 @@ I have participated in problem-setting in several competitions of informatics, i
 - Know Java, JavaScript, MATLAB, LaTeX
 - TOEFL: 92; CET-4: 575
 
-*Last update on December 11th, 2018*
+*Last update on Feburary 1st, 2019*
 
 ------
